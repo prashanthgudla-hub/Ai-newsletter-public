@@ -6,170 +6,172 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
+        * { box-sizing:border-box; margin:0; padding:0; }
         body {
-            font-family: 'DM Sans', Arial, sans-serif;
-            max-width: 800px; margin: 0 auto;
-            padding: 20px; background: #f5f5f0;
-            color: #1a1a2e; font-weight: 300;
+            font-family:'DM Sans',Arial,sans-serif;
+            max-width:800px; margin:0 auto;
+            padding:20px; background:#f5f5f0;
+            color:#1a1a2e; font-weight:300;
         }
         .newsletter-header {
-            border-top: 3px solid #1a1a2e; background: white;
-            padding: 2rem 2.5rem 0;
-            border-left: 0.5px solid #e0e0e0;
-            border-right: 0.5px solid #e0e0e0;
+            border-top:3px solid #1a1a2e; background:white;
+            padding:2rem 2.5rem 0;
+            border-left:0.5px solid #e0e0e0;
+            border-right:0.5px solid #e0e0e0;
         }
         .header-top {
-            display: flex; justify-content: space-between;
-            align-items: flex-end; padding-bottom: 1.5rem;
+            display:flex; justify-content:space-between;
+            align-items:flex-end; padding-bottom:1.5rem;
         }
         .issue-label {
-            font-size: 11px; letter-spacing: 0.12em;
-            text-transform: uppercase; color: #888; margin-bottom: 8px;
+            font-size:11px; letter-spacing:0.12em;
+            text-transform:uppercase; color:#888; margin-bottom:8px;
         }
         .brand-name {
-            font-family: 'DM Serif Display', Georgia, serif;
-            font-size: 38px; color: #1a1a2e;
-            line-height: 1; letter-spacing: -0.5px; margin-bottom: 6px;
+            font-family:'DM Serif Display',Georgia,serif;
+            font-size:38px; color:#1a1a2e;
+            line-height:1; letter-spacing:-0.5px; margin-bottom:6px;
         }
-        .brand-name em { font-style: italic; color: #1a5c96; }
+        .brand-name em { font-style:italic; color:#1a5c96; }
         .tagline {
-            font-size: 13px; color: #888;
-            font-weight: 300; letter-spacing: 0.02em;
+            font-size:13px; color:#888;
+            font-weight:300; letter-spacing:0.02em;
         }
         .byline {
-            font-size: 11px; color: #888; text-transform: uppercase;
-            letter-spacing: 0.08em; margin-bottom: 4px; text-align: right;
+            font-size:11px; color:#888; text-transform:uppercase;
+            letter-spacing:0.08em; margin-bottom:4px; text-align:right;
         }
         .author-name {
-            font-size: 15px; font-weight: 500;
-            color: #1a1a2e; text-align: right;
+            font-size:15px; font-weight:500;
+            color:#1a1a2e; text-align:right;
         }
         .meta-bar {
-            border-top: 0.5px solid #e0e0e0; background: #f9f9f7;
-            padding: 0.6rem 2.5rem; display: flex; gap: 2rem;
-            border-left: 0.5px solid #e0e0e0;
-            border-right: 0.5px solid #e0e0e0;
+            border-top:0.5px solid #e0e0e0; background:#f9f9f7;
+            padding:0.6rem 2.5rem; display:flex; gap:2rem;
+            border-left:0.5px solid #e0e0e0;
+            border-right:0.5px solid #e0e0e0;
         }
-        .meta-item { font-size: 12px; color: #888; }
-        .meta-item strong { color: #1a1a2e; font-weight: 500; }
+        .meta-item { font-size:12px; color:#888; }
+        .meta-item strong { color:#1a1a2e; font-weight:500; }
         .content-wrap {
-            background: white; padding: 2rem 2.5rem;
-            border: 0.5px solid #e0e0e0; border-top: none;
+            background:white; padding:2rem 2.5rem;
+            border:0.5px solid #e0e0e0; border-top:none;
         }
         h2 {
-            font-family: 'DM Serif Display', Georgia, serif;
-            font-size: 22px; color: #1a1a2e;
-            margin: 2.5rem 0 1rem; font-weight: 400;
-            padding-top: 1.5rem;
-            border-top: 0.5px solid #e8e8e8;
+            font-family:'DM Serif Display',Georgia,serif;
+            font-size:22px; color:#1a1a2e;
+            margin:2.5rem 0 1rem; font-weight:400;
+            padding-top:1.5rem;
+            border-top:0.5px solid #e8e8e8;
         }
-        h2:first-of-type { border-top: none; padding-top: 0; }
+        h2:first-of-type { border-top:none; padding-top:0; }
         .overview {
-            border-left: 3px solid #1a5c96; padding: 1.2rem 1.5rem;
-            background: #f0f5fb; border-radius: 0 8px 8px 0;
-            margin: 1rem 0 2rem; font-size: 15px;
-            line-height: 1.8; color: #2a2a3e;
+            border-left:3px solid #1a5c96; padding:1.2rem 1.5rem;
+            background:#f0f5fb; border-radius:0 8px 8px 0;
+            margin:1rem 0 2rem; font-size:15px;
+            line-height:1.8; color:#2a2a3e;
         }
         .article {
-            padding: 1.2rem 0;
-            border-bottom: 0.5px solid #e8e8e8;
+            padding:1.2rem 0;
+            border-bottom:0.5px solid #e8e8e8;
         }
-        .article:last-child { border-bottom: none; }
+        .article:last-child { border-bottom:none; }
         .article h3 {
-            font-size: 15px; font-weight: 500;
-            color: #1a1a2e; margin-bottom: 8px; line-height: 1.4;
+            font-size:15px; font-weight:500;
+            color:#1a1a2e; margin-bottom:8px; line-height:1.4;
         }
         .article p {
-            font-size: 14px; color: #444;
-            line-height: 1.7; margin-bottom: 8px;
+            font-size:14px; color:#444;
+            line-height:1.7; margin-bottom:8px;
         }
         .analyst-take {
-            background: #f9f9f7 !important;
-            border-left: 2px solid #1a5c96;
-            padding: 6px 10px !important;
-            border-radius: 0 4px 4px 0;
-            font-size: 13px !important;
-            color: #1a1a2e !important;
+            background:#f9f9f7 !important;
+            border-left:2px solid #1a5c96;
+            padding:6px 10px !important;
+            border-radius:0 4px 4px 0;
+            font-size:13px !important;
+            color:#1a1a2e !important;
         }
         .article a {
-            font-size: 13px; color: #1a5c96;
-            text-decoration: none; font-weight: 500;
+            font-size:13px; color:#1a5c96;
+            text-decoration:none; font-weight:500;
         }
         .expert-voices {
-            background: #f8faf8;
-            border-left: 3px solid #2e7d32;
-            padding: 0 1.5rem 1rem;
-            border-radius: 0 8px 8px 0; margin: 1rem 0;
+            background:#f8faf8;
+            border-left:3px solid #2e7d32;
+            padding:0 1.5rem 1rem;
+            border-radius:0 8px 8px 0; margin:1rem 0;
         }
-        .expert-voices h2 { border-top: none; padding-top: 1rem; }
+        .expert-voices h2 { border-top:none; padding-top:1rem; }
         .data-section {
-            background: #fff8f5;
-            border-left: 3px solid #bf5a00;
-            padding: 0 1.5rem 1rem;
-            border-radius: 0 8px 8px 0; margin: 1rem 0;
+            background:#fff8f5;
+            border-left:3px solid #bf5a00;
+            padding:0 1.5rem 1rem;
+            border-radius:0 8px 8px 0; margin:1rem 0;
         }
-        .data-section h2 { border-top: none; padding-top: 1rem; }
+        .data-section h2 { border-top:none; padding-top:1rem; }
         .free-tools-section {
-            background: #f8f5ff;
-            border-left: 3px solid #7c4ddd;
-            padding: 1rem 1.5rem;
-            border-radius: 0 8px 8px 0; margin: 1rem 0;
+            background:#f8f5ff;
+            border-left:3px solid #7c4ddd;
+            padding:1rem 1.5rem;
+            border-radius:0 8px 8px 0; margin:1rem 0;
         }
-        .free-tools-section h2 { border-top: none; padding-top: 0.5rem; }
+        .free-tools-section h2 { border-top:none; padding-top:0.5rem; }
         .free-tool {
-            padding: 0.8rem 0; border-bottom: 0.5px solid #e8e0f5;
+            padding:0.8rem 0; border-bottom:0.5px solid #e8e0f5;
         }
-        .free-tool:last-child { border-bottom: none; }
+        .free-tool:last-child { border-bottom:none; }
         .free-tool h3 {
-            font-size: 14px; font-weight: 500;
-            color: #3d2080; margin-bottom: 4px;
+            font-size:14px; font-weight:500;
+            color:#3d2080; margin-bottom:4px;
         }
         .free-tool p {
-            font-size: 13px; color: #555;
-            line-height: 1.5; margin-bottom: 4px;
+            font-size:13px; color:#555;
+            line-height:1.5; margin-bottom:4px;
         }
         .free-tool a {
-            font-size: 13px; color: #7c4ddd;
-            text-decoration: none; font-weight: 500;
+            font-size:13px; color:#7c4ddd;
+            text-decoration:none; font-weight:500;
         }
         .section-intro {
-            font-size: 13px; color: #666;
-            font-style: italic; margin-bottom: 1rem;
+            font-size:13px; color:#666;
+            font-style:italic; margin-bottom:1rem;
         }
         .action-item {
-            background: #fffbf0; border-left: 3px solid #e8a020;
-            padding: 1.2rem 1.5rem; border-radius: 0 8px 8px 0;
-            margin: 1rem 0; font-size: 14px;
-            line-height: 1.7; color: #3a2a00;
+            background:#fffbf0; border-left:3px solid #e8a020;
+            padding:1.2rem 1.5rem; border-radius:0 8px 8px 0;
+            margin:1rem 0; font-size:14px;
+            line-height:1.7; color:#3a2a00;
         }
         .feedback-form {
-            background: #f9f9f7; padding: 1.5rem;
-            border: 0.5px solid #e0e0e0;
-            border-radius: 8px; margin: 2rem 0;
+            background:#f9f9f7; padding:1.5rem;
+            border:0.5px solid #e0e0e0;
+            border-radius:8px; margin:2rem 0;
         }
         .feedback-form h2 {
-            font-size: 20px; margin: 0 0 0.5rem;
-            border-top: none; padding-top: 0;
+            font-size:20px; margin:0 0 0.5rem;
+            border-top:none; padding-top:0;
         }
-        .feedback-form p { font-size: 14px; margin: 0.8rem 0 0.3rem; }
+        .feedback-form p {
+            font-size:14px; margin:0.8rem 0 0.3rem;
+        }
         textarea {
-            width: 100%; padding: 10px; border-radius: 6px;
-            border: 0.5px solid #ccc; font-size: 14px;
-            margin: 4px 0 8px; display: block;
-            font-family: inherit; background: white; line-height: 1.5;
+            width:100%; padding:10px; border-radius:6px;
+            border:0.5px solid #ccc; font-size:14px;
+            margin:4px 0 8px; display:block;
+            font-family:inherit; background:white; line-height:1.5;
         }
         .submit-btn {
-            background: #1a1a2e; color: white;
-            padding: 10px 28px; border: none; border-radius: 6px;
-            cursor: pointer; font-size: 14px; letter-spacing: 0.05em;
-            font-family: inherit; margin-top: 8px;
+            background:#1a1a2e; color:white;
+            padding:10px 28px; border:none; border-radius:6px;
+            cursor:pointer; font-size:14px; letter-spacing:0.05em;
+            font-family:inherit; margin-top:8px;
         }
-        .submit-btn:hover { background: #1a5c96; }
-        a { color: #1a5c96; }
+        .submit-btn:hover { background:#1a5c96; }
+        a { color:#1a5c96; }
         .footer {
-            font-size: 11px; color: #aaa; text-align: center;
-            padding: 1.5rem 0; letter-spacing: 0.04em; line-height: 1.8;
+            font-size:11px; color:#aaa; text-align:center;
+            padding:1.5rem 0; letter-spacing:0.04em; line-height:1.8;
         }
     </style>
 </head>
@@ -194,198 +196,302 @@
     </div>
     <div class="content-wrap">
         
-        ────────────────────────────────────────
-SECTION 1: Today's Big Picture
-────────────────────────────────────────
-<div class='overview'>
+        <div class='overview'>
 <h2>🌅 Today's Big Picture</h2>
-Today, major advancements in AI continue to reshape industries, with notable developments in autonomous vehicles, AI-powered customer intelligence, and cloud infrastructure. Slate Auto raised $650 million in funding, while GetWhys secured $5.2 million for its AI-powered customer intelligence platform. Meanwhile, Railway received $100 million to challenge AWS with AI-native cloud infrastructure. The AI landscape is also seeing increased investment, with autonomous vehicle funding more than tripling in 2026. For data analysts, these advancements mean increased access to sophisticated tools and platforms, enabling more efficient and accurate analysis. As AI technology continues to evolve, data analysts must stay adaptable and open to learning new skills to remain competitive.
+The AI landscape is rapidly evolving with significant developments in AI model releases, product launches, and expert insights. OpenAI's updated Codex app and the introduction of GPT-Rosalind for life sciences research are notable advancements. Additionally, Salesforce has launched a new Slackbot AI agent, and Railway has secured $100 million to challenge AWS with AI-native cloud infrastructure. These developments highlight the growing importance of AI in various industries, and data professionals should stay informed to leverage these advancements effectively. As the AI ecosystem expands, it's crucial for analysts to focus on the practical applications and capabilities of these new models and tools.
 </div>
 
-────────────────────────────────────────
-SECTION 2: Major AI Happenings
-────────────────────────────────────────
 <div class='major-happenings'>
 <h2>📰 Major AI Happenings</h2>
-<div class='article'>
-  <h3>📌 Tesla Brings Robotaxi Service to Dallas and Houston — TechCrunch</h3>
-  <p>Tesla has expanded its robotaxi service to Dallas and Houston, marking the company's third city launch. The service utilizes Tesla's autonomous vehicle technology to provide on-demand transportation. This development is significant, as it demonstrates the growing capabilities of autonomous vehicles in real-world applications. With Tesla's robotaxi service, users can request rides using the Tesla app, and the autonomous vehicle will navigate to the pickup location.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> The expansion of Tesla's robotaxi service highlights the increasing importance of autonomous vehicles in the transportation sector, and data analysts should be prepared to work with the vast amounts of data generated by these vehicles.</p>
-  <a href='https://techcrunch.com/2026/04/18/tesla-brings-its-robotaxi-service-to-dallas-and-houston/'>🔗 Read more</a>
+<div class='article' data-title='OpenAI Updates Codex App'>
+  <h3>📌 OpenAI Updates Codex App — OpenAI</h3>
+  <p>OpenAI has updated its Codex app, adding computer use and in-app browsing capabilities. This development enhances the app's functionality, allowing for more comprehensive interactions with the AI model. The updated Codex app is available for macOS and Windows.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Explore the updated Codex app to understand its improved capabilities and potential applications in your workflow.</p>
+  <a href='https://openai.com/index/codex-for-almost-everything'>🔗 Read more</a>
+  <div class='thumb-row'></div>
 </div>
-<div class='article'>
-  <h3>📌 Cerebras Files for IPO — TechCrunch</h3>
-  <p>Cerebras, an AI chip startup, has filed for an initial public offering (IPO). The company has developed a unique AI-optimized chip design, which has gained significant attention in the industry. This development is crucial, as it demonstrates the growing demand for specialized AI hardware. Cerebras' AI chips are designed to accelerate machine learning workloads, enabling faster and more efficient processing of complex data.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> The IPO filing by Cerebras underscores the increasing importance of specialized AI hardware, and data analysts should be aware of the potential impact on their workloads and workflows.</p>
-  <a href='https://techcrunch.com/2026/04/18/ai-chip-startup-cerebras-files-for-ipo/'>🔗 Read more</a>
-</div>
-<div class='article'>
-  <h3>📌 Railway Secures $100 Million to Challenge AWS — VentureBeat</h3>
-  <p>Railway, a cloud platform, has raised $100 million in funding to challenge AWS with its AI-native cloud infrastructure. The company aims to provide a more efficient and cost-effective alternative to traditional cloud providers. This development is significant, as it highlights the growing demand for AI-optimized cloud infrastructure. Railway's platform is designed to accelerate machine learning workloads, enabling faster and more efficient processing of complex data.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> The funding secured by Railway demonstrates the increasing competition in the cloud infrastructure market, and data analysts should be prepared to evaluate the benefits and trade-offs of AI-native cloud infrastructure.</p>
-  <a href='https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud'>🔗 Read more</a>
-</div>
-<div class='article'>
-  <h3>📌 Anthropic’s Relationship with the Trump Administration Seems to be Thawing — TechCrunch</h3>
-  <p>Anthropic, an AI company, appears to be improving its relationship with the Trump administration, despite being designated a supply-chain risk by the Pentagon. The company is reportedly in talks with the administration, which could lead to potential partnerships or collaborations. This development is crucial, as it demonstrates the complex and evolving landscape of AI regulations and policies.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> The potential thawing of relations between Anthropic and the Trump administration highlights the complex and dynamic nature of AI policy and regulation, and data analysts should stay informed about these developments.</p>
-  <a href='https://techcrunch.com/2026/04/18/anthropics-relationship-with-the-trump-administration-seems-to-be-thawing/'>🔗 Read more</a>
-</div>
-<div class='article'>
+<div class='article' data-title='Salesforce Rolls Out New Slackbot AI Agent'>
   <h3>📌 Salesforce Rolls Out New Slackbot AI Agent — VentureBeat</h3>
-  <p>Salesforce has launched a new Slackbot AI agent, which is designed to provide more efficient and personalized support to users. The agent utilizes machine learning algorithms to learn from user interactions and improve its responses over time. This development is significant, as it demonstrates the growing use of AI-powered chatbots in customer support applications.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> The introduction of Salesforce's new Slackbot AI agent highlights the increasing use of AI-powered chatbots in customer support, and data analysts should be prepared to work with the data generated by these interactions.</p>
+  <p>Salesforce has launched a new Slackbot AI agent, signaling its efforts to enhance workplace AI capabilities. This move is part of Salesforce's strategy to compete with Microsoft and Google in the workplace AI sector.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Assess how Salesforce's new Slackbot AI agent can be integrated into your workflow to improve team collaboration and productivity.</p>
   <a href='https://venturebeat.com/technology/salesforce-rolls-out-new-slackbot-ai-agent-as-it-battles-microsoft-and'>🔗 Read more</a>
+  <div class='thumb-row'></div>
 </div>
-<div class='article'>
-  <h3>📌 Listen Labs Raises $69M to Scale AI Customer Interviews — VentureBeat</h3>
-  <p>Listen Labs, a startup, has raised $69 million in funding to scale its AI-powered customer interview platform. The platform utilizes machine learning algorithms to analyze customer feedback and provide insights to businesses. This development is crucial, as it demonstrates the growing demand for AI-powered customer feedback analysis.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> The funding secured by Listen Labs underscores the increasing importance of AI-powered customer feedback analysis, and data analysts should be aware of the potential benefits and applications of this technology.</p>
-  <a href='https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai'>🔗 Read more</a>
+<div class='article' data-title='Railway Secures $100 Million for AI-Native Cloud Infrastructure'>
+  <h3>📌 Railway Secures $100 Million for AI-Native Cloud Infrastructure — VentureBeat</h3>
+  <p>Railway has secured $100 million in funding to challenge AWS with its AI-native cloud infrastructure. This investment underscores the growing demand for specialized cloud infrastructure tailored to AI workloads.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Evaluate Railway's AI-native cloud infrastructure as a potential alternative to AWS for your AI projects, considering its capabilities and cost implications.</p>
+  <a href='https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud'>🔗 Read more</a>
+  <div class='thumb-row'></div>
 </div>
-<div class='article'>
-  <h3>📌 Gemany App for Mac — Product Hunt</h3>
-  <p>Gemany, a new app for Mac, provides an AI-powered alternative to traditional coding tools. The app utilizes machine learning algorithms to learn from user interactions and improve its suggestions over time. This development is significant, as it demonstrates the growing use of AI-powered tools in software development.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> The introduction of Gemany highlights the increasing use of AI-powered tools in software development, and data analysts should be prepared to work with the data generated by these tools.</p>
-  <a href='https://www.producthunt.com/products/gemini-6'>🔗 Read more</a>
+<div class='article' data-title='Google Introduces AI Mode in Chrome'>
+  <h3>📌 Google Introduces AI Mode in Chrome — Google Blog</h3>
+  <p>Google has introduced AI Mode in Chrome, offering a new way to explore the web with AI assistance. This feature enhances the browsing experience by providing AI-driven suggestions and tools.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Explore AI Mode in Chrome to understand its potential in improving your web browsing and research efficiency.</p>
+  <a href='https://blog.google/products-and-platforms/products/search/ai-mode-chrome/'>🔗 Read more</a>
+  <div class='thumb-row'></div>
 </div>
-<div class='article'>
-  <h3>📌 Vantage in Google Labs — Product Hunt</h3>
-  <p>Vantage, a new platform in Google Labs, provides a suite of AI-powered tools for data analysis and visualization. The platform utilizes machine learning algorithms to learn from user interactions and improve its suggestions over time. This development is significant, as it demonstrates the growing use of AI-powered tools in data analysis and visualization.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> The introduction of Vantage highlights the increasing use of AI-powered tools in data analysis and visualization, and data analysts should be prepared to work with the data generated by these tools.</p>
-  <a href='https://www.producthunt.com/products/google'>🔗 Read more</a>
+<div class='article' data-title='OpenAI Introduces GPT-Rosalind for Life Sciences Research'>
+  <h3>📌 OpenAI Introduces GPT-Rosalind for Life Sciences Research — OpenAI</h3>
+  <p>OpenAI has introduced GPT-Rosalind, a frontier reasoning model designed to accelerate life sciences research. This model has the potential to significantly impact research in biology, chemistry, and related fields.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Investigate how GPT-Rosalind can be applied to your life sciences research projects to enhance discovery and analysis capabilities.</p>
+  <a href='https://openai.com/index/introducing-gpt-rosalind'>🔗 Read more</a>
+  <div class='thumb-row'></div>
+</div>
+<div class='article' data-title='Gemini 3.1 Flash TTS: Next Generation of Expressive AI Speech'>
+  <h3>📌 Gemini 3.1 Flash TTS: Next Generation of Expressive AI Speech — Google Blog</h3>
+  <p>Google has announced Gemini 3.1 Flash TTS, representing the next generation of expressive AI speech. This development aims to improve the naturalness and expressiveness of AI-generated speech.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Examine the potential applications of Gemini 3.1 Flash TTS in your projects, focusing on its ability to enhance user experience through more natural and engaging AI speech.</p>
+  <a href='https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-tts/'>🔗 Read more</a>
+  <div class='thumb-row'></div>
 </div>
 </div>
 
-────────────────────────────────────────
-SECTION 3: Expert Voices
-────────────────────────────────────────
 <div class='expert-voices'>
 <h2>🎙️ Expert Voices</h2>
-<div class='article'>
-  <h3>🎙️ Jensen Huang — Exponential View</h3>
-  <p>Jensen Huang, CEO of Nvidia, shared his insights on the future of AI and its potential applications. He emphasized the importance of specialized AI hardware and the growing demand for AI-optimized cloud infrastructure. Huang also discussed the potential risks and challenges associated with AI development, highlighting the need for responsible AI development and deployment.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Jensen Huang's comments highlight the importance of specialized AI hardware and responsible AI development, and data analysts should be aware of the potential implications of these developments on their work.</p>
-  <a href='https://www.exponentialview.co/p/ev-570'>🔗 Read more</a>
+<div class='article' data-title='Andrej Karpathy on the Growing Gap in Understanding AI Capability'>
+  <h3>🎙️ Andrej Karpathy — Twitter</h3>
+  <p>Andrej Karpathy discusses the growing gap in understanding AI capability, highlighting the difference between free, outdated models and state-of-the-art, paid models like OpenAI Codex and Claude Code. He emphasizes that the latest advancements are particularly notable in technical domains such as programming and research.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Recognize the distinction between basic AI models and advanced, specialized models, and consider how this gap might impact your projects and expectations.</p>
+  <a href='https://nitter.net/karpathy/status/2042334451611693415#m'>🔗 Read more</a>
+  <div class='thumb-row'></div>
 </div>
-<div class='article'>
-  <h3>🎙️ Yann LeCun — Facebook AI</h3>
-  <p>Yann LeCun, Director of AI Research at Facebook, discussed the current state of AI research and the challenges associated with developing more advanced AI systems. He emphasized the importance of interdisciplinary collaboration and the need for more diverse and representative data sets. LeCun also highlighted the potential applications of AI in various industries, including healthcare and education.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Yann LeCun's comments emphasize the importance of interdisciplinary collaboration and diverse data sets in AI research, and data analysts should be aware of the potential implications of these developments on their work.</p>
-  <a href='https://ai.facebook.com/">🔗 Read more</a>
-</div>
-<div class='article'>
-  <h3>🎙️ Andrew Ng — Coursera</h3>
-  <p>Andrew Ng, Co-Founder of Coursera, discussed the growing demand for AI and machine learning skills in the job market. He emphasized the importance of online education and the need for more accessible and affordable AI training programs. Ng also highlighted the potential applications of AI in various industries, including healthcare and finance.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Andrew Ng's comments highlight the growing demand for AI and machine learning skills, and data analysts should be aware of the potential implications of these developments on their careers and professional development.</p>
-  <a href='https://www.coursera.org/">🔗 Read more</a>
+<div class='article' data-title='Andrej Karpathy on the Quality of Comments on GitHub Gists'>
+  <h3>🎙️ Andrej Karpathy — Twitter</h3>
+  <p>Andrej Karpathy reflects on the high quality of comments on GitHub gists, suggesting that the format and lack of incentives may contribute to more helpful and constructive interactions. He ponders the potential for GitHub to compete with other platforms based on this strength.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Consider leveraging GitHub gists for collaborative work or discussion, given the observed quality of interactions on the platform.</p>
+  <a href='https://nitter.net/karpathy/status/2040806346556428585#m'>🔗 Read more</a>
+  <div class='thumb-row'></div>
 </div>
 </div>
 
-────────────────────────────────────────
-SECTION 4: Data & Analytics
-────────────────────────────────────────
 <div class='data-section'>
 <h2>📊 Data & Analytics</h2>
-<div class='article'>
-  <h3>📊 New Tools for Data Work — Hugging Face</h3>
-  <p>Hugging Face has released several new tools for data work, including a fast multilingual OCR model and a framework for building conversational AI agents. The tools are designed to simplify and accelerate data analysis and visualization, and are particularly useful for natural language processing and computer vision tasks.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> The new tools from Hugging Face highlight the growing demand for specialized AI tools in data analysis and visualization, and data analysts should be aware of the potential benefits and applications of these tools.</p>
+<div class='article' data-title='Training Multimodal Embedding & Reranker Models with Sentence Transformers'>
+  <h3>📊 Training Multimodal Embedding & Reranker Models with Sentence Transformers — Hugging Face</h3>
+  <p>Hugging Face provides insights into training multimodal embedding and reranker models using sentence transformers. This approach enables more effective handling of multimodal data, such as text and images, in AI applications.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Explore the use of sentence transformers for multimodal data processing, considering their potential to enhance your projects involving complex data types.</p>
+  <a href='https://huggingface.co/blog/train-multimodal-sentence-transformers'>🔗 Read more</a>
+  <div class='thumb-row'></div>
+</div>
+<div class='article' data-title='Building a Fast Multilingual OCR Model with Synthetic Data'>
+  <h3>📊 Building a Fast Multilingual OCR Model with Synthetic Data — Hugging Face</h3>
+  <p>Hugging Face discusses the development of a fast multilingual OCR model using synthetic data. This approach demonstrates the feasibility of creating efficient and accurate OCR models for diverse languages.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Evaluate the potential of synthetic data for training OCR models, especially for languages with limited annotated datasets.</p>
   <a href='https://huggingface.co/blog/nvidia/nemotron-ocr-v2'>🔗 Read more</a>
+  <div class='thumb-row'></div>
 </div>
-<div class='article'>
-  <h3>📊 Real World AI Applied to Data/Analytics — Salesforce</h3>
-  <p>Salesforce has released a new AI-powered analytics platform, which utilizes machine learning algorithms to provide personalized insights and recommendations to users. The platform is designed to simplify and accelerate data analysis, and is particularly useful for sales and marketing teams.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> The new AI-powered analytics platform from Salesforce highlights the growing use of AI in data analysis and visualization, and data analysts should be prepared to work with the data generated by these tools.</p>
-  <a href='https://www.salesforce.com/">🔗 Read more</a>
+<div class='article' data-title='Ecom-RLVE: Adaptive Verifiable Environments for E-Commerce Conversational Agents'>
+  <h3>📊 Ecom-RLVE: Adaptive Verifiable Environments for E-Commerce Conversational Agents — Hugging Face</h3>
+  <p>Hugging Face introduces Ecom-RLVE, a framework for creating adaptive verifiable environments for e-commerce conversational agents. This tool is designed to enhance the development and testing of conversational AI in e-commerce contexts.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Consider Ecom-RLVE for developing more sophisticated and interactive conversational agents in e-commerce applications.</p>
+  <a href='https://huggingface.co/blog/ecom-rlve'>🔗 Read more</a>
+  <div class='thumb-row'></div>
 </div>
-<div class='article'>
-  <h3>📊 New Ways to Create Personalized Images — Gemini App</h3>
-  <p>The Gemini app has introduced new ways to create personalized images, utilizing AI-powered image generation and manipulation tools. The tools are designed to simplify and accelerate image creation, and are particularly useful for social media and marketing teams.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> The new image generation tools in the Gemini app highlight the growing use of AI in creative applications, and data analysts should be aware of the potential implications of these developments on their work.</p>
-  <a href='https://blog.google/innovation-and-ai/products/gemini-app/personal-intelligence-nano-banana/'>🔗 Read more</a>
-</div>
-<div class='article'>
-  <h3>📊 AI-Powered Customer Feedback Analysis — Listen Labs</h3>
-  <p>Listen Labs has introduced an AI-powered customer feedback analysis platform, which utilizes machine learning algorithms to analyze customer feedback and provide insights to businesses. The platform is designed to simplify and accelerate customer feedback analysis, and is particularly useful for customer support and marketing teams.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> The new AI-powered customer feedback analysis platform from Listen Labs highlights the growing demand for AI-powered customer feedback analysis, and data analysts should be aware of the potential benefits and applications of this technology.</p>
-  <a href='https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai'>🔗 Read more</a>
-</div>
-<div class='article'>
-  <h3>📊 AI-Native Cloud Infrastructure — Railway</h3>
-  <p>Railway has introduced an AI-native cloud infrastructure platform, which is designed to provide a more efficient and cost-effective alternative to traditional cloud providers. The platform utilizes machine learning algorithms to optimize cloud resource allocation and utilization.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> The new AI-native cloud infrastructure platform from Railway highlights the growing demand for AI-optimized cloud infrastructure, and data analysts should be aware of the potential implications of these developments on their work.</p>
-  <a href='https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud'>🔗 Read more</a>
+<div class='article' data-title='The PR you would have opened yourself'>
+  <h3>📊 The PR you would have opened yourself — Hugging Face</h3>
+  <p>Hugging Face shares insights on transforming PyTorch models to MLX, making them more accessible and deployable. This transformation can simplify the integration of PyTorch models into various applications.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Explore the benefits of converting PyTorch models to MLX format for easier deployment and collaboration.</p>
+  <a href='https://huggingface.co/blog/transformers-to-mlx'>🔗 Read more</a>
+  <div class='thumb-row'></div>
 </div>
 </div>
 
-────────────────────────────────────────
-SECTION 5: Free Tools & Resources
-────────────────────────────────────────
 <div class='free-tools-section'>
 <h2>🆓 Free Tools & Resources</h2>
-<p class='section-intro'>
-Specially curated for those building skills on a budget.
-</p>
+<p class='section-intro'>Specially curated for those building skills on a budget.</p>
 <div class='free-tool'>
-  <h3>🛠️ Hugging Face Transformers</h3>
-  <p>Hugging Face Transformers is a popular open-source library for natural language processing tasks, providing a wide range of pre-trained models and tools for text analysis and generation.</p>
-  <p><strong>Why grab it now:</strong> Hugging Face Transformers is a powerful tool for natural language processing tasks, and is completely free to use.</p>
-  <a href='https://huggingface.co/transformers/'>🔗 Get it free</a>
+  <h3>🛠️ OpenAI's GPT-Rosalind</h3>
+  <p>OpenAI's GPT-Rosalind is a free model for life sciences research, offering advanced capabilities for biological and chemical analysis.</p>
+  <p><strong>Why grab it now:</strong> Leverage GPT-Rosalind's cutting-edge features to accelerate your life sciences research without incurring additional costs.</p>
+  <a href='https://openai.com/index/introducing-gpt-rosalind'>🔗 Get it free</a>
 </div>
 <div class='free-tool'>
-  <h3>🛠️ Google Colab</h3>
-  <p>Google Colab is a free online platform for data science and machine learning development, providing a range of tools and libraries for data analysis, visualization, and modeling.</p>
-  <p><strong>Why grab it now:</strong> Google Colab is a powerful tool for data science and machine learning development, and is completely free to use.</p>
-  <a href='https://colab.research.google.com/'>🔗 Get it free</a>
+  <h3>🛠️ GitHub Gists</h3>
+  <p>GitHub Gists is a free platform for sharing code snippets and collaborating on small projects, known for its high-quality comments and discussions.</p>
+  <p><strong>Why grab it now:</strong> Utilize GitHub Gists for collaborative coding and discussion, benefiting from its active and helpful community.</p>
+  <a href='https://gist.github.com/'>🔗 Get it free</a>
 </div>
 <div class='free-tool'>
-  <h3>🛠️ OpenAI Gym</h3>
-  <p>OpenAI Gym is a free online platform for reinforcement learning and robotics development, providing a range of tools and environments for training and testing AI models.</p>
-  <p><strong>Why grab it now:</strong> OpenAI Gym is a powerful tool for reinforcement learning and robotics development, and is completely free to use.</p>
-  <a href='https://gym.openai.com/'>🔗 Get it free</a>
+  <h3>🛠️ Sentence Transformers</h3>
+  <p>Sentence transformers are free models for natural language processing tasks, including text classification, semantic search, and more, available through the Hugging Face model hub.</p>
+  <p><strong>Why grab it now:</strong> Integrate sentence transformers into your NLP projects to enhance performance and efficiency, all at no cost.</p>
+  <a href='https://huggingface.co/models?filter=sentence-transformers'>🔗 Get it free</a>
 </div>
 </div>
 
-────────────────────────────────────────
-SECTION 6: One Thing To Try Today
-────────────────────────────────────────
 <div class='action-item'>
 <h2>💡 One Thing To Try Today</h2>
-Try using the Hugging Face Transformers library to build a simple chatbot, using the pre-trained models and tools provided. This will give you hands-on experience with natural language processing and AI-powered text analysis. To get started, visit the Hugging Face Transformers website and follow the tutorials and guides provided.
+Explore OpenAI's updated Codex app and its new features, such as computer use and in-app browsing, to understand how these advancements can streamline your workflow and improve productivity. Spend about 20 minutes navigating the app, reading the documentation, and experimenting with its capabilities to get a hands-on feel for what's possible.
 </div>
         
     <div id="feedback" class="feedback-form">
         <h2>Improve Tomorrow's Edition</h2>
-        <p style="font-size:14px; color:#666; margin-bottom:1rem;">
-            Your feedback is read by AI every morning — what you like gets
-            prioritised, what you don't gets filtered out.
+        <p style="font-size:14px;color:#666;margin-bottom:1rem;">
+            Your feedback is read by AI every morning and shapes the next edition.
+            Trusted readers' feedback is auto-integrated.
         </p>
-        <form action="https://formspree.io/f/mgoryeeq" method="POST">
-            <p><strong>What was most interesting today?</strong></p>
-            <textarea name="liked_topics" rows="2"
-                placeholder="e.g. Major AI Happenings section, free tools, expert voices...">
-            </textarea>
-            <p><strong>What was NOT relevant or interesting?</strong></p>
-            <textarea name="disliked_topics" rows="2"
-                placeholder="e.g. Too much hardware news, overly technical papers...">
-            </textarea>
-            <p><strong>Any other preferences for future editions?</strong></p>
-            <textarea name="other_feedback" rows="2"
-                placeholder="e.g. More Indian AI news, focus on tools I can use today...">
-            </textarea>
-            <input type="hidden" name="date"
-                value="April 19, 2026">
-            <input type="hidden" name="_subject"
-                value="Signal Report Feedback — Apr 19">
-            <input type="hidden" name="_next"
-                value="https://prashanthgudla-hub.github.io/Ai-newsletter-public/?feedback=thanks">
-            <br>
-            <button type="submit" class="submit-btn">
-                Save My Preferences
-            </button>
-        </form>
+        <div id="feedback-status"
+             style="display:none;background:#e8f5e9;padding:12px;
+                    border-radius:6px;margin-bottom:1rem;color:#2e7d32;">
+            ✅ Feedback saved! Thank you.
+        </div>
+        <label style="font-size:14px;font-weight:500;">Your email</label>
+        <input type="email" id="fb-email"
+               placeholder="your@email.com"
+               style="width:100%;padding:10px;border-radius:6px;
+                      border:0.5px solid #ccc;font-size:14px;
+                      margin:6px 0 12px;display:block;font-family:inherit;">
+        <p style="font-size:14px;font-weight:500;">
+            What was most interesting today?
+        </p>
+        <textarea id="fb-liked" rows="2"
+            placeholder="e.g. The Claude update, expert voices, free tools...">
+        </textarea>
+        <p style="font-size:14px;font-weight:500;">
+            What was NOT relevant?
+        </p>
+        <textarea id="fb-disliked" rows="2"
+            placeholder="e.g. Too much hardware news, US-only stories...">
+        </textarea>
+        <p style="font-size:14px;font-weight:500;">
+            Other preferences?
+        </p>
+        <textarea id="fb-other" rows="2"
+            placeholder="e.g. More India AI news, focus on free tools...">
+        </textarea>
+        <br>
+        <button class="submit-btn" onclick="submitFeedback()">
+            Save My Preferences
+        </button>
     </div>
+
+    <script>
+    const JSONBIN_URL = "https://api.jsonbin.io/v3/b/69e4da4836566621a8ccbd6d";
+    const JSONBIN_KEY = "$2a$10$8KV3sS5yZz/QKWDiwIev.e2eLYEJFMFrGVbgyBPe0Bi4E2RQny7rO";
+
+    // Render thumb buttons on all articles
+    document.querySelectorAll('.thumb-row').forEach(row => {
+        const article = row.closest('.article');
+        const title   = article ? article.dataset.title : '';
+        row.innerHTML = `
+            <button onclick="thumb('up','${title}',this)"
+                style="background:none;border:0.5px solid #ccc;
+                       border-radius:4px;padding:4px 10px;
+                       cursor:pointer;font-size:13px;
+                       margin-top:8px;margin-right:6px;color:#555;">
+                👍 Helpful
+            </button>
+            <button onclick="thumb('down','${title}',this)"
+                style="background:none;border:0.5px solid #ccc;
+                       border-radius:4px;padding:4px 10px;
+                       cursor:pointer;font-size:13px;
+                       margin-top:8px;color:#555;">
+                👎 Not for me
+            </button>`;
+    });
+
+    async function readBin() {
+        try {
+            const r = await fetch(JSONBIN_URL + "/latest",
+                {headers:{"X-Master-Key":JSONBIN_KEY}});
+            const d = await r.json();
+            return d.record || {"feedback":[]};
+        } catch { return {"feedback":[]}; }
+    }
+
+    async function writeBin(data) {
+        await fetch(JSONBIN_URL, {
+            method:"PUT",
+            headers:{
+                "X-Master-Key":JSONBIN_KEY,
+                "Content-Type":"application/json"
+            },
+            body:JSON.stringify(data)
+        });
+    }
+
+    async function thumb(direction, title, btn) {
+        const email = localStorage.getItem("signal_email") || "";
+        const data  = await readBin();
+        const feeds = data.feedback || [];
+        const today = new Date().toISOString().split('T')[0];
+
+        let entry = feeds.find(f => f.email===email && f.date===today);
+        if (!entry) {
+            entry = {
+                email, date:today,
+                thumbs_up:[], thumbs_down:[],
+                liked_topics:"", disliked_topics:"", other_feedback:""
+            };
+            feeds.push(entry);
+        }
+
+        if (direction==="up") {
+            if (!entry.thumbs_up.includes(title))
+                entry.thumbs_up.push(title);
+            btn.style.background="#e8f5e9";
+            btn.style.borderColor="#2e7d32";
+            btn.nextElementSibling.style.background="";
+            btn.nextElementSibling.style.borderColor="";
+        } else {
+            if (!entry.thumbs_down.includes(title))
+                entry.thumbs_down.push(title);
+            btn.style.background="#ffebee";
+            btn.style.borderColor="#c62828";
+            btn.previousElementSibling.style.background="";
+            btn.previousElementSibling.style.borderColor="";
+        }
+
+        data.feedback = feeds;
+        await writeBin(data);
+    }
+
+    async function submitFeedback() {
+        const email    = document.getElementById("fb-email").value.trim();
+        const liked    = document.getElementById("fb-liked").value.trim();
+        const disliked = document.getElementById("fb-disliked").value.trim();
+        const other    = document.getElementById("fb-other").value.trim();
+
+        if (!email) {
+            alert("Please enter your email so we can personalise your edition.");
+            return;
+        }
+
+        localStorage.setItem("signal_email", email);
+
+        const data  = await readBin();
+        const feeds = data.feedback || [];
+        const today = new Date().toISOString().split('T')[0];
+
+        let entry = feeds.find(f => f.email===email && f.date===today);
+        if (!entry) {
+            entry = {
+                email, date:today,
+                thumbs_up:[], thumbs_down:[],
+                liked_topics:"", disliked_topics:"", other_feedback:""
+            };
+            feeds.push(entry);
+        }
+
+        entry.liked_topics    = liked;
+        entry.disliked_topics = disliked;
+        entry.other_feedback  = other;
+        data.feedback = feeds;
+        await writeBin(data);
+
+        document.getElementById("feedback-status").style.display = "block";
+        document.getElementById("fb-liked").value    = "";
+        document.getElementById("fb-disliked").value = "";
+        document.getElementById("fb-other").value    = "";
+    }
+
+    // Pre-fill saved email on load
+    window.addEventListener("load", () => {
+        const saved = localStorage.getItem("signal_email");
+        if (saved) document.getElementById("fb-email").value = saved;
+    });
+    </script>
     </div>
     <div class="footer">
         The Signal Report · Auto-curated by AI · Personalised by Prashanth Gudla<br>
