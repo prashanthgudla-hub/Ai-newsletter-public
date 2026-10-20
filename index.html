@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>The Signal Report — Oct 13</title>
+    <title>The Signal Report — Oct 20</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -190,129 +190,168 @@
         </div>
     </div>
     <div class="meta-bar">
-        <div class="meta-item"><strong>October 13, 2026</strong></div>
+        <div class="meta-item"><strong>October 20, 2026</strong></div>
         <div class="meta-item">5 min read</div>
         <div class="meta-item">Powered by Groq</div>
     </div>
     <div class="content-wrap">
         
-        <div class='overview'>
-<h2>🌅 This Week's Big Picture</h2>
-Meta unveiled its first frontier model, **Muse Wonder**, marking the company’s bold step into large‑scale, multimodal AI that promises higher fidelity generation at lower latency. The model, positioned as a lightweight alternative to the earlier Muse Spark, ships with built‑in safety filters and is already available via Meta’s API platform. Across the week, a cascade of launches—from GPT‑6’s Intelligent UI to cost‑cutting extensions for Codex—signals a rapid democratization of high‑performance agents for developers and marketers alike. Analysts should watch how early adopters integrate Muse Wonder and GPT‑6 into Slack‑style assistants and salesforce‑linked workflows, as these integrations will set the benchmark for next‑gen AI productivity tools.
+        ```html
+<div class='overview'>
+  <h2>🌅 This Week's Big Picture</h2>
+  <p>Microsoft warned that enterprise AI agents are emerging insider‑threat vectors, underscoring the urgent need for tighter governance as frontier models proliferate. At the same time, Amazon unveiled TorchNeuron, a free dev‑tool aimed at breaking Nvidia’s PyTorch dominance, and Nvidia released open‑source models optimized for on‑premise agent workloads. Google’s Gemini 4 Argon entered preview, promising “hard‑problem” reasoning, while OpenAI expanded its ecosystem with a Stack Overflow‑for‑Agents plugin that tripled sign‑ups. These launches collectively signal a rapid shift toward self‑hosted, controllable AI agents across cloud, edge, and developer stacks—analysts should start mapping internal use‑cases to these emerging capabilities now. </p>
 </div>
 
 <div class='major-happenings'>
-<h2>📰 Major AI Happenings</h2>
+  <h2>📰 Major AI Happenings</h2>
 
-<div class='article' data-title='Meta releases its first frontier model, Muse Wonder'>
-  <h3>📌 Meta releases its first frontier model, Muse Wonder — TechCrunch</h3>
-  <p>Meta launched Muse Wonder, a frontier‑scale multimodal model that delivers higher‑quality image and text generation while cutting inference latency by 30% compared with Muse Spark. The API rollout includes pre‑tuned safety layers, making it ready for enterprise chat and content‑creation pipelines. Early testers report a 20% boost in engagement on AI‑driven social feeds.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Add Muse Wonder to your content‑generation stack now to stay ahead of the fidelity race.</p>
-  <a href='https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/'>🔗 Read more</a>
-  <div class='thumb-row'></div>
+  <div class='article' data-title='Microsoft says AI agents are like insider threats as ‘frontier models can’t be trusted’'>
+    <h3>📌 Microsoft says AI agents are like insider threats as ‘frontier models can’t be trusted’ — TechCrunch</h3>
+    <p>Microsoft flagged enterprise AI agents as a new class of insider threat, urging firms to audit agent permissions, audit logs, and sandbox runtimes. The company released a starter “Agent Guardrails” checklist and a lightweight monitoring SDK for real‑time policy enforcement. This move pushes security teams to treat autonomous agents like privileged users.</p>
+    <p class='analyst-take'>💼 <strong>Analyst take:</strong> Start a pilot to audit every internal AI agent and enforce least‑privilege access today.</p>
+    <a href='https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted/'>🔗 Read more</a>
+    <div class='thumb-row'></div>
+  </div>
+
+  <div class='article' data-title='Amazon is taking its biggest shot at Nvidia yet with new TorchNeuron dev tool'>
+    <h3>📌 Amazon is taking its biggest shot at Nvidia yet with new TorchNeuron dev tool — TechCrunch</h3>
+    <p>Amazon released TorchNeuron, a free, open‑source compiler that translates PyTorch models to run efficiently on AWS custom silicon, cutting inference latency by up to 45 % on typical LLM workloads. The toolkit integrates directly with SageMaker and offers one‑click deployment scripts. It’s positioned as a direct alternative to Nvidia’s CUDA stack for developers building on AWS.</p>
+    <p class='analyst-take'>💼 <strong>Analyst take:</strong> Migrate at least one low‑latency inference workload to TorchNeuron to test cost & performance gains.</p>
+    <a href='https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/'>🔗 Read more</a>
+    <div class='thumb-row'></div>
+  </div>
+
+  <div class='article' data-title='Hackers hit AI coding tool OpenCode, running up charges on users’ AI accounts'>
+    <h3>📌 Hackers hit AI coding tool OpenCode, running up charges on users’ AI accounts — TechCrunch</h3>
+    <p>OpenCode, an open‑source AI coding assistant, was compromised and weaponized to auto‑generate costly API calls on unsuspecting users, inflating bills by up to $2,000 in hours. The breach highlighted the risk of unrestricted agent execution and prompted the project maintainers to roll out a mandatory API‑key whitelist and usage‑cap limits.</p>
+    <p class='analyst-take'>💼 <strong>Analyst take:</strong> Review any third‑party AI agents for unrestricted API access and enforce per‑user caps.</p>
+    <a href='https://techcrunch.com/2026/10/19/hackers-hit-ai-coding-tool-opencode-running-up-charges-on-users-ai-accounts/'>🔗 Read more</a>
+    <div class='thumb-row'></div>
+  </div>
+
+  <div class='article' data-title='Nvidia launches new open models to run agents in the enterprise and on PCs'>
+    <h3>📌 Nvidia launches new open models to run agents in the enterprise and on PCs — TechCrunch</h3>
+    <p>Nvidia unveiled two open‑source LLMs—Nemo‑Agent‑Enterprise (7B) and Nemo‑Agent‑PC (3B)—optimized for on‑premise inference with low‑memory kernels. The models ship with a pre‑built agent orchestration stack and can be fine‑tuned on a single RTX 4090. This lowers the barrier for companies wanting self‑hosted AI agents without Nvidia‑cloud contracts.</p>
+    <p class='analyst-take'>💼 <strong>Analyst take:</strong> Prototype a proof‑of‑concept agent on your internal GPU cluster using Nemo‑Agent‑Enterprise.</p>
+    <a href='https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/'>🔗 Read more</a>
+    <div class='thumb-row'></div>
+  </div>
+
+  <div class='article' data-title='Meta removes language that raised scraping and AI training concerns'>
+    <h3>📌 Meta removes language that raised scraping and AI training concerns — TechCrunch</h3>
+    <p>Meta updated its Terms of Service to delete clauses that had previously hinted at using scraped public data for AI training. The change came after regulator pressure and a wave of developer backlash. While the legal text is now neutral, Meta confirmed it will still train models on publicly available content under existing policies.</p>
+    <p class='analyst-take'>💼 <strong>Analyst take:</strong> Verify your data ingestion pipelines respect the new TOS to avoid future compliance issues.</p>
+    <a href='https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/'>🔗 Read more</a>
+    <div class='thumb-row'></div>
+  </div>
+
+  <div class='article' data-title='Gemini 4 Argon: Built to solve your hardest problems'>
+    <h3>📌 Gemini 4 Argon: Built to solve your hardest problems — Google AI Blog</h3>
+    <p>Google introduced Gemini 4 Argon, a 128‑billion‑parameter multimodal model engineered for complex reasoning, code synthesis, and scientific discovery. Early benchmarks show 2‑3× improvement on chain‑of‑thought tasks versus Gemini 3, and Argon can ingest up to 64 k tokens per request. The model is available in preview via Vertex AI with a free trial quota.</p>
+    <p class='analyst-take'>💼 <strong>Analyst take:</strong> Test Argon on a pilot research problem to gauge its advantage over existing LLMs.</p>
+    <a href='https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/'>🔗 Read more</a>
+    <div class='thumb-row'></div>
+  </div>
+
+  <div class='article' data-title='Stack Overflow for Agents triples signups with ChatGPT plugin'>
+    <h3>📌 Stack Overflow for Agents triples signups with ChatGPT plugin — OpenAI</h3>
+    <p>OpenAI’s new “Stack Overflow for Agents” plugin lets developers embed Stack Overflow’s Q&A corpus directly into ChatGPT, accelerating debugging by 40 % on average. Within two weeks of launch, sign‑ups jumped from 12 k to 36 k, driven by the seamless code‑snippet retrieval and auto‑completion features.</p>
+    <p class='analyst-take'>💼 <strong>Analyst take:</strong> Install the plugin in your team’s ChatGPT instance to cut support ticket resolution time.</p>
+    <a href='https://openai.com/index/stack-overflow-chatgpt-plugin'>🔗 Read more</a>
+    <div class='thumb-row'></div>
+  </div>
+
+  <div class='article' data-title='Bringing GPT-Rosalind to academic research labs'>
+    <h3>📌 Bringing GPT-Rosalind to academic research labs — OpenAI</h3>
+    <p>OpenAI launched the Rosalind Academic Plan, granting eligible university labs free access to GPT‑Rosalind, a specialized LLM tuned for scientific literature synthesis and hypothesis generation. The program includes 500 k free compute credits per year and dedicated support for integrating the model into lab pipelines.</p>
+    <p class='analyst-take'>💼 <strong>Analyst take:</strong> Apply for the Academic Plan to prototype AI‑assisted literature reviews in your next grant proposal.</p>
+    <a href='https://openai.com/index/introducing-the-rosalind-academic-plan'>🔗 Read more</a>
+    <div class='thumb-row'></div>
+  </div>
+
 </div>
 
-<div class='article' data-title='Honeyjar offers AI tools to improve PR and comms at every company'>
-  <h3>📌 Honeyjar offers AI tools to improve PR and comms at every company — TechCrunch</h3>
-  <p>Honeyjar introduced a suite of generative‑AI assistants that draft press releases, craft pitch emails, and monitor media sentiment in real time. The platform integrates with Slack and Salesforce, letting PR teams push drafts to approval workflows with a single click. Users see a 40% reduction in turnaround time for media outreach.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Pilot Honeyjar on a single campaign to gauge ROI before scaling across the org.</p>
-  <a href='https://techcrunch.com/2026/10/12/honeyjar-offers-ai-tools-to-improve-pr-and-comms-at-every-company/'>🔗 Read more</a>
-  <div class='thumb-row'></div>
-</div>
-
-<div class='article' data-title='These execs think voice AI hasn’t reached its ChatGPT moment yet'>
-  <h3>📌 These execs think voice AI hasn’t reached its ChatGPT moment yet — TechCrunch</h3>
-  <p>Industry leaders argue that voice assistants still lag behind text‑based LLMs due to context‑preservation challenges. New research highlighted in the article shows a 25% error rate in multi‑turn voice interactions, prompting calls for hybrid models that combine speech‑to‑text pipelines with ChatGPT‑level reasoning.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Explore hybrid voice‑text bots now; the gap creates a niche for early innovators.</p>
-  <a href='https://techcrunch.com/2026/10/11/these-execs-think-voice-ai-hasnt-reached-its-chatgpt-moment-yet/'>🔗 Read more</a>
-  <div class='thumb-row'></div>
-</div>
-
-<div class='article' data-title='Here are the top AI agents that can live in your text messages'>
-  <h3>📌 Here are the top AI agents that can live in your text messages — TechCrunch</h3>
-  <p>The roundup showcases five messenger‑integrated agents that can schedule meetings, summarize threads, and fetch data without leaving the chat. Notably, the “TaskGenie” bot integrates with Asana and offers a slash‑command UI that reduces task‑creation friction by 3‑steps.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Deploy a text‑agent in your team’s Slack channel to automate routine ticket creation.</p>
-  <a href='https://techcrunch.com/2026/10/10/all-the-ai-agents-that-can-live-in-your-text-messages/'>🔗 Read more</a>
-  <div class='thumb-row'></div>
-</div>
-
-<div class='article' data-title='Asana cuts model costs 76x in browser tests with GPT-6.1 Sol'>
-  <h3>📌 Asana cuts model costs 76x in browser tests with GPT-6.1 Sol — OpenAI</h3>
-  <p>By swapping to the new GPT‑6.1 “Sol” variant, Asana’s browser‑based task assistant achieved a 76× cost reduction and a 5× speed boost, while preserving 98% of the original response quality. The move makes large‑scale LLM usage viable for SaaS products that run entirely client‑side.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Re‑engineer your in‑app assistants with GPT‑6.1 Sol to slash cloud spend.</p>
-  <a href='https://openai.com/index/asana-browser-agent'>🔗 Read more</a>
-  <div class='thumb-row'></div>
-</div>
-
-<div class='article' data-title='How Oracle turns days of work into minutes with ChatGPT and Codex'>
-  <h3>📌 How Oracle turns days of work into minutes with ChatGPT and Codex — OpenAI</h3>
-  <p>Oracle embedded ChatGPT and Codex into its internal knowledge‑base, automating code reviews, query generation, and onboarding scripts. The integration reduced average ticket resolution time from 48 hours to 2 hours, showcasing enterprise‑grade productivity gains.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Map repetitive dev‑ops tasks to ChatGPT plugins for immediate efficiency wins.</p>
-  <a href='https://openai.com/index/oracle'>🔗 Read more</a>
-  <div class='thumb-row'></div>
-</div>
-
-<div class='article' data-title='LegalOn halves Codex costs while maintaining development speed'>
-  <h3>📌 LegalOn halves Codex costs while maintaining development speed — OpenAI</h3>
-  <p>LegalOn introduced a caching layer that stores frequently‑used Codex completions, cutting daily API spend by 65% without slowing down the contract‑analysis pipeline. The approach proved robust across 1 M+ document scans.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Implement result‑caching for any high‑volume LLM workflow to double cost efficiency.</p>
-  <a href='https://openai.com/index/legalon-halves-codex-costs'>🔗 Read more</a>
-  <div class='thumb-row'></div>
-</div>
-
-</div>
+<!-- No Expert Voices section – fewer than two expert‑only items available -->
 
 <div class='data-section'>
-<h2>📊 Data & Analytics</h2>
+  <h2>📊 Data & Analytics</h2>
 
-<div class='article' data-title="A Practical Guide to OpenAI's New Decisions API">
-  <h3>📊 A Practical Guide to OpenAI's New Decisions API — Towards Data Science</h3>
-  <p>The guide walks through the Decisions API, which lets developers embed LLM‑driven choice logic (e.g., “accept/reject”) directly into workflows. Sample code shows a 30% reduction in decision‑loop latency versus traditional prompt‑then‑parse patterns.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Swap rule‑based branching with the Decisions API to streamline automated approvals.</p>
-  <a href='httpshttps://towardsdatascience.com/a-practical-guide-to-openais-new-decisions-api/'>🔗 Read more</a>
-  <div class='thumb-row'></div>
+  <div class='article' data-title='Benefit Street Partners answers questions faster with Codex'>
+    <h3>📊 Benefit Street Partners answers questions faster with Codex — OpenAI</h3>
+    <p>Anant Kumar built a Codex‑powered tool that auto‑extracts key clauses from loan agreements and generates valuation snapshots in seconds, shaving 6‑hour manual reviews down to under 15 minutes. The system integrates with the firm’s internal data lake and complies with GDPR.</p>
+    <p class='analyst-take'>💼 <strong>Analyst take:</strong> Prototype a similar clause‑extraction workflow for your own financial documents.</p>
+    <a href='https://openai.com/index/benefit-street-partners'>🔗 Read more</a>
+    <div class='thumb-row'></div>
+  </div>
+
+  <div class='article' data-title='Amp puts AI agents to work beyond code with OpenAI models'>
+    <h3>📊 Amp puts AI agents to work beyond code with OpenAI models — OpenAI</h3>
+    <p>Amp deployed GPT‑6 Astra and Ultrafas agents across marketing, HR, and supply‑chain functions, reporting a 30 % productivity lift in ticket routing and a 22 % reduction in manual data entry. The agents communicate via a unified API and can be swapped out with custom prompts in minutes.</p>
+    <p class='analyst-take'>💼 <strong>Analyst take:</strong> Identify one non‑coding business process to pilot an Amp agent on.</p>
+    <a href='https://openai.com/index/amp-beyond-coding'>🔗 Read more</a>
+    <div class='thumb-row'></div>
+  </div>
+
+  <div class='article' data-title='How Third Moment Research runs 10,000 agents for 36+ hours'>
+    <h3>📊 How Third Moment Research runs 10,000 agents for 36+ hours — OpenAI</h3>
+    <p>Third Moment orchestrated a fleet of 10 k GPT‑6 agents to simulate cyber‑attack scenarios, running continuous red‑team exercises for over 36 hours with zero human intervention. The platform logs each decision path, enabling post‑mortem analysis that uncovered 12 previously unknown attack vectors.</p>
+    <p class='analyst-take'>💼 <strong>Analyst take:</strong> Explore a small‑scale agent swarm to stress‑test your own security controls.</p>
+    <a href='https://openai.com/index/third-moment-research'>🔗 Read more</a>
+    <div class='thumb-row'></div>
+  </div>
+
+  <div class='article' data-title='The EU’s next chapter in AI is agentic'>
+    <h3>📊 The EU’s next chapter in AI is agentic — OpenAI</h3>
+    <p>OpenAI’s analysis of EU enterprise surveys shows 68 % of large firms plan to deploy autonomous agents by 2028, with finance and logistics leading adoption. Regulatory guidance released this week clarifies liability for agent‑generated decisions, prompting vendors to embed audit trails.</p>
+    <p class='analyst-take'>💼 <strong>Analyst take:</strong> Align your governance framework with the new EU agentic guidelines now.</p>
+    <a href='https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic'>🔗 Read more</a>
+    <div class='thumb-row'></div>
+  </div>
+
+  <div class='article' data-title='Run fast, private agents on-device with LFM2.5-24B-A2B'>
+    <h3>📊 Run fast, private agents on-device with LFM2.5-24B-A2B — Hugging Face</h3>
+    <p>Hugging Face released the 24‑billion‑parameter LFM2.5‑A2B model optimized for on‑device execution, delivering sub‑100 ms response times on a Snapdragon 8 Gen 2 chip. The repo includes a Dockerized inference server and a step‑by‑step guide for privacy‑first chat assistants.</p>
+    <p class='analyst-take'>💼 <strong>Analyst take:</strong> Deploy LFM2.5‑A2B on a developer phone to prototype a data‑private chatbot.</p>
+    <a href='https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b'>🔗 Read more</a>
+    <div class='thumb-row'></div>
+  </div>
+
 </div>
 
-<div class='article' data-title='Agentic Systems: A Practitioner's Guide to 6 Advanced Architectural Patterns'>
-  <h3>📊 Agentic Systems: A Practitioner's Guide to 6 Advanced Architectural Patterns — Towards Data Science</h3>
-  <p>This deep‑dive catalogs six production‑ready patterns—ReAct+, Tool‑First, and Guarded Loops—each with code snippets and performance benchmarks. Teams adopting Guarded Loops reported 2× fewer hallucinations in data‑extraction tasks.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Start with the Guarded Loop pattern for any agent that scrapes external sources.</p>
-  <a href='https://towardsdatascience.com/agentic-systems-a-practitioners-guide-to-6-advanced-architectural-patterns/'>🔗 Read more</a>
-  <div class='thumb-row'></div>
-</div>
+<div class='free-tools-section'>
+  <h2>🆓 Free Tools & Resources</h2>
+  <p class='section-intro'>Specially curated for those building skills on a budget.</p>
 
-<div class='article' data-title='How Can AI Agents Read Untrusted Sources Safely?'>
-  <h3>📊 How Can AI Agents Read Untrusted Sources Safely? — Towards Data Science</h3>
-  <p>The article proposes a sandboxed fetch‑evaluate‑sanitize pipeline, using content‑type whitelists and cryptographic signatures to prevent malicious payloads from reaching LLMs. Real‑world tests on news APIs showed a 92% drop in injection attacks.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Wrap any external API call with the suggested sandbox to protect your agents.</p>
-  <a href='https://towardsdatascience.com/how-can-ai-agents-read-untrusted-sources-safely/'>🔗 Read more</a>
-  <div class='thumb-row'></div>
-</div>
+  <div class='free-tool'>
+    <h3>🛠️ TorchNeuron</h3>
+    <p>A free compiler that translates PyTorch models to run on AWS custom silicon, cutting inference latency without extra hardware.</p>
+    <p><strong>Why grab it now:</strong> Early adopters gain up to 45 % cost savings on LLM workloads.</p>
+    <a href='https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/'>🔗 Get it free</a>
+  </div>
 
-<div class='article' data-title="Can TypeSafe's Jev Make AI Agents Safer Without Another LLM?">
-  <h3>📊 Can TypeSafe's Jev Make AI Agents Safer Without Another LLM? — Towards Data Science</h3>
-  <p>Jev, a decision‑first model, intercepts risky tool calls before they execute, acting as a guardrail without adding a second LLM layer. Benchmarks show a 45% cut in unsafe calls while preserving 97% of functional output.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Deploy Jev as a lightweight safety filter for any production agent.</p>
-  <a href='https://towardsdatascience.com/can-typesafes-jev-make-ai-agents-safer-without-another-llm/'>🔗 Read more</a>
-  <div class='thumb-row'></div>
-</div>
+  <div class='free-tool'>
+    <h3>🛠️ LFM2.5‑24B‑A2B On‑Device Model</h3>
+    <p>An open‑source 24B‑parameter model that runs locally on mobile CPUs/GPUs, enabling privacy‑first AI assistants.</p>
+    <p><strong>Why grab it now:</strong> The repo includes a one‑click Docker image—no heavy setup required.</p>
+    <a href='https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b'>🔗 Get it free</a>
+  </div>
 
-<div class='article' data-title='Build Your First AI Agent with One Tool Call'>
-  <h3>📊 Build Your First AI Agent with One Tool Call — Towards Data Science</h3>
-  <p>This beginner‑friendly tutorial shows how to construct a functional agent that fetches weather data, parses it, and responds in natural language—all with a single OpenAI tool call. The end‑to‑end example runs in under 10 seconds on a laptop.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Follow this guide to prototype a personal assistant before scaling to multi‑tool agents.</p>
-  <a href='https://towardsdatascience.com/build-your-first-ai-agent-with-one-tool-call/'>🔗 Read more</a>
-  <div class='thumb-row'></div>
-</div>
+  <div class='free-tool'>
+    <h3>🛠️ Thin Orchestrator Blog & Code</h3>
+    <p>Meta’s engineering post details a lightweight routing architecture that makes AI agents more reliable by reducing the router’s decision space.</p>
+    <p><strong>Why grab it now:</strong> Implement the pattern today to cut agent latency by ~20 % in production.</p>
+    <a href='https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/'>🔗 Get it free</a>
+  </div>
 
 </div>
 
 <div class='action-item'>
-<h2>💡 One Thing To Try Today</h2>
-Use the “Build Your First AI Agent with One Tool Call” tutorial to create a weather‑query assistant, then replace the weather API with OpenAI’s Decisions API to add a “recommend‑umbrella‑or‑not” decision step—all in under 30 minutes.
+  <h2>💡 One Thing To Try Today</h2>
+  <p>Download the LFM2.5‑24B‑A2B model from Hugging Face, run the provided Docker container, and build a simple “Ask‑Me‑Anything” chatbot that answers questions locally on your laptop—no cloud API keys needed. (<30 minutes)</p>
 </div>
 
-Edition date: October 13, 2026
+<!-- Edition date: October 20, 2026 -->
+```
         
     <div id="feedback" class="feedback-form">
         <h2>Improve Next Week's Edition</h2>
