@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>The Signal Report — Oct 20</title>
+    <title>The Signal Report — Oct 27</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -190,168 +190,149 @@
         </div>
     </div>
     <div class="meta-bar">
-        <div class="meta-item"><strong>October 20, 2026</strong></div>
+        <div class="meta-item"><strong>October 27, 2026</strong></div>
         <div class="meta-item">5 min read</div>
         <div class="meta-item">Powered by Groq</div>
     </div>
     <div class="content-wrap">
         
-        ```html
-<div class='overview'>
-  <h2>🌅 This Week's Big Picture</h2>
-  <p>Microsoft warned that enterprise AI agents are emerging insider‑threat vectors, underscoring the urgent need for tighter governance as frontier models proliferate. At the same time, Amazon unveiled TorchNeuron, a free dev‑tool aimed at breaking Nvidia’s PyTorch dominance, and Nvidia released open‑source models optimized for on‑premise agent workloads. Google’s Gemini 4 Argon entered preview, promising “hard‑problem” reasoning, while OpenAI expanded its ecosystem with a Stack Overflow‑for‑Agents plugin that tripled sign‑ups. These launches collectively signal a rapid shift toward self‑hosted, controllable AI agents across cloud, edge, and developer stacks—analysts should start mapping internal use‑cases to these emerging capabilities now. </p>
+        <div class='overview'>
+<h2>🌅 This Week's Big Picture</h2>
+<p>OpenAI‑powered Greptile unveiled a GPT‑6 Astra‑driven bug‑detection engine that can automatically surface hidden defects in user‑flow code, cutting review time by up to 60 % for developers. At the same time, the new Decisions API promises sub‑second, low‑cost decision calls that let any app react instantly to user intent. Grok’s first seven‑minute AI‑generated “Odyssey” video shows how generative media is finally moving from lab demos to consumable content. For data‑centric teams, the latest field tests of Claude Code vs. Cursor reveal token‑efficiency gaps that could reshape how we choose coding assistants. Analysts should start mapping these releases to workflow automation roadmaps – the payoff will be faster delivery and tighter security.</p>
 </div>
 
 <div class='major-happenings'>
-  <h2>📰 Major AI Happenings</h2>
+<h2>📰 Major AI Happenings</h2>
 
-  <div class='article' data-title='Microsoft says AI agents are like insider threats as ‘frontier models can’t be trusted’'>
-    <h3>📌 Microsoft says AI agents are like insider threats as ‘frontier models can’t be trusted’ — TechCrunch</h3>
-    <p>Microsoft flagged enterprise AI agents as a new class of insider threat, urging firms to audit agent permissions, audit logs, and sandbox runtimes. The company released a starter “Agent Guardrails” checklist and a lightweight monitoring SDK for real‑time policy enforcement. This move pushes security teams to treat autonomous agents like privileged users.</p>
-    <p class='analyst-take'>💼 <strong>Analyst take:</strong> Start a pilot to audit every internal AI agent and enforce least‑privilege access today.</p>
-    <a href='https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted/'>🔗 Read more</a>
-    <div class='thumb-row'></div>
-  </div>
+<div class='article' data-title='Grok releases the first seven minutes of its AI-generated ‘Odyssey’'>
+  <h3>📌 Grok releases the first seven minutes of its AI-generated ‘Odyssey’ — TechCrunch</h3>
+  <p>Grok dropped a seven‑minute excerpt of its AI‑generated film “Odyssey,” proving that large‑scale visual storytelling can be produced end‑to‑end by a single model. The clip runs entirely on Grok’s proprietary diffusion pipeline and costs less than $0.10 per frame to render. Early viewers note coherent narrative flow despite the model’s limited artistic training.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Test Grok’s video API on a short marketing reel to gauge cost‑effective content creation.</p>
+  <a href='https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/'>🔗 Read more</a>
+  <div class='thumb-row'></div>
+</div>
 
-  <div class='article' data-title='Amazon is taking its biggest shot at Nvidia yet with new TorchNeuron dev tool'>
-    <h3>📌 Amazon is taking its biggest shot at Nvidia yet with new TorchNeuron dev tool — TechCrunch</h3>
-    <p>Amazon released TorchNeuron, a free, open‑source compiler that translates PyTorch models to run efficiently on AWS custom silicon, cutting inference latency by up to 45 % on typical LLM workloads. The toolkit integrates directly with SageMaker and offers one‑click deployment scripts. It’s positioned as a direct alternative to Nvidia’s CUDA stack for developers building on AWS.</p>
-    <p class='analyst-take'>💼 <strong>Analyst take:</strong> Migrate at least one low‑latency inference workload to TorchNeuron to test cost & performance gains.</p>
-    <a href='https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/'>🔗 Read more</a>
-    <div class='thumb-row'></div>
-  </div>
+<div class='article' data-title='Greptile takes bug detection beyond code review with GPT-6 Astra'>
+  <h3>📌 Greptile takes bug detection beyond code review with GPT-6 Astra — OpenAI News</h3>
+  <p>Greptile launched a new service that runs GPT‑6 Astra over live user‑flow scripts, automatically surfacing logic bugs that static linters miss. In internal benchmarks, the tool reduced defect‑escape rates by 45 % and cut triage time from days to minutes. The SaaS offering includes a free tier for repos under 10 k lines.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Add Greptile to your CI pipeline today to accelerate bug‑fix cycles.</p>
+  <a href='https://openai.com/index/greptile-code-review-codex-astra'>🔗 Read more</a>
+  <div class='thumb-row'></div>
+</div>
 
-  <div class='article' data-title='Hackers hit AI coding tool OpenCode, running up charges on users’ AI accounts'>
-    <h3>📌 Hackers hit AI coding tool OpenCode, running up charges on users’ AI accounts — TechCrunch</h3>
-    <p>OpenCode, an open‑source AI coding assistant, was compromised and weaponized to auto‑generate costly API calls on unsuspecting users, inflating bills by up to $2,000 in hours. The breach highlighted the risk of unrestricted agent execution and prompted the project maintainers to roll out a mandatory API‑key whitelist and usage‑cap limits.</p>
-    <p class='analyst-take'>💼 <strong>Analyst take:</strong> Review any third‑party AI agents for unrestricted API access and enforce per‑user caps.</p>
-    <a href='https://techcrunch.com/2026/10/19/hackers-hit-ai-coding-tool-opencode-running-up-charges-on-users-ai-accounts/'>🔗 Read more</a>
-    <div class='thumb-row'></div>
-  </div>
+<div class='article' data-title='GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases'>
+  <h3>📌 GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases — OpenAI News</h3>
+  <p>CodeRabbit integrated GPT‑6.1 Sol to scan multi‑module repositories for privilege‑escalation patterns and insecure API calls. The model flagged 3 × more high‑severity issues than prior rule‑based scans while maintaining a false‑positive rate under 2 %.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Deploy the Sol‑powered scanner on legacy monoliths to surface hidden attack surfaces.</p>
+  <a href='https://openai.com/index/gpt-6-1-sol-coderabbit-code-security'>🔗 Read more</a>
+  <div class='thumb-row'></div>
+</div>
 
-  <div class='article' data-title='Nvidia launches new open models to run agents in the enterprise and on PCs'>
-    <h3>📌 Nvidia launches new open models to run agents in the enterprise and on PCs — TechCrunch</h3>
-    <p>Nvidia unveiled two open‑source LLMs—Nemo‑Agent‑Enterprise (7B) and Nemo‑Agent‑PC (3B)—optimized for on‑premise inference with low‑memory kernels. The models ship with a pre‑built agent orchestration stack and can be fine‑tuned on a single RTX 4090. This lowers the barrier for companies wanting self‑hosted AI agents without Nvidia‑cloud contracts.</p>
-    <p class='analyst-take'>💼 <strong>Analyst take:</strong> Prototype a proof‑of‑concept agent on your internal GPU cluster using Nemo‑Agent‑Enterprise.</p>
-    <a href='https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/'>🔗 Read more</a>
-    <div class='thumb-row'></div>
-  </div>
+<div class='article' data-title='ChatGPT’s expanding world of work'>
+  <h3>📌 ChatGPT’s expanding world of work — OpenAI News</h3>
+  <p>OpenAI released a Signals report covering 165 distinct work activities across 100+ countries, showing that ChatGPT now assists in 38 % of knowledge‑worker tasks on average. The data highlights rapid adoption in sales enablement, code generation, and customer support.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Identify high‑impact tasks in your team and pilot ChatGPT integrations to boost productivity.</p>
+  <a href='https://openai.com/index/chatgpt-expanding-world-of-work'>🔗 Read more</a>
+  <div class='thumb-row'></div>
+</div>
 
-  <div class='article' data-title='Meta removes language that raised scraping and AI training concerns'>
-    <h3>📌 Meta removes language that raised scraping and AI training concerns — TechCrunch</h3>
-    <p>Meta updated its Terms of Service to delete clauses that had previously hinted at using scraped public data for AI training. The change came after regulator pressure and a wave of developer backlash. While the legal text is now neutral, Meta confirmed it will still train models on publicly available content under existing policies.</p>
-    <p class='analyst-take'>💼 <strong>Analyst take:</strong> Verify your data ingestion pipelines respect the new TOS to avoid future compliance issues.</p>
-    <a href='https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/'>🔗 Read more</a>
-    <div class='thumb-row'></div>
-  </div>
+<div class='article' data-title='Build more responsive apps with the Decisions API'>
+  <h3>📌 Build more responsive apps with the Decisions API — OpenAI News</h3>
+  <p>The Decisions API offers low‑latency (< 20 ms) probabilistic routing for real‑time apps, letting developers embed “choose‑your‑own‑path” logic without heavy infrastructure. Pricing is usage‑based at $0.0005 per decision, making it viable for high‑traffic products.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Swap rule‑engine calls for Decisions API to shave milliseconds off user flows.</p>
+  <a href='https://openai.com/index/decisions-api'>🔗 Read more</a>
+  <div class='thumb-row'></div>
+</div>
 
-  <div class='article' data-title='Gemini 4 Argon: Built to solve your hardest problems'>
-    <h3>📌 Gemini 4 Argon: Built to solve your hardest problems — Google AI Blog</h3>
-    <p>Google introduced Gemini 4 Argon, a 128‑billion‑parameter multimodal model engineered for complex reasoning, code synthesis, and scientific discovery. Early benchmarks show 2‑3× improvement on chain‑of‑thought tasks versus Gemini 3, and Argon can ingest up to 64 k tokens per request. The model is available in preview via Vertex AI with a free trial quota.</p>
-    <p class='analyst-take'>💼 <strong>Analyst take:</strong> Test Argon on a pilot research problem to gauge its advantage over existing LLMs.</p>
-    <a href='https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/'>🔗 Read more</a>
-    <div class='thumb-row'></div>
-  </div>
-
-  <div class='article' data-title='Stack Overflow for Agents triples signups with ChatGPT plugin'>
-    <h3>📌 Stack Overflow for Agents triples signups with ChatGPT plugin — OpenAI</h3>
-    <p>OpenAI’s new “Stack Overflow for Agents” plugin lets developers embed Stack Overflow’s Q&A corpus directly into ChatGPT, accelerating debugging by 40 % on average. Within two weeks of launch, sign‑ups jumped from 12 k to 36 k, driven by the seamless code‑snippet retrieval and auto‑completion features.</p>
-    <p class='analyst-take'>💼 <strong>Analyst take:</strong> Install the plugin in your team’s ChatGPT instance to cut support ticket resolution time.</p>
-    <a href='https://openai.com/index/stack-overflow-chatgpt-plugin'>🔗 Read more</a>
-    <div class='thumb-row'></div>
-  </div>
-
-  <div class='article' data-title='Bringing GPT-Rosalind to academic research labs'>
-    <h3>📌 Bringing GPT-Rosalind to academic research labs — OpenAI</h3>
-    <p>OpenAI launched the Rosalind Academic Plan, granting eligible university labs free access to GPT‑Rosalind, a specialized LLM tuned for scientific literature synthesis and hypothesis generation. The program includes 500 k free compute credits per year and dedicated support for integrating the model into lab pipelines.</p>
-    <p class='analyst-take'>💼 <strong>Analyst take:</strong> Apply for the Academic Plan to prototype AI‑assisted literature reviews in your next grant proposal.</p>
-    <a href='https://openai.com/index/introducing-the-rosalind-academic-plan'>🔗 Read more</a>
-    <div class='thumb-row'></div>
-  </div>
+<div class='article' data-title='Uber brings ChatGPT Work to all employees with OpenAI'>
+  <h3>📌 Uber brings ChatGPT Work to all employees with OpenAI — OpenAI News</h3>
+  <p>Uber is rolling out ChatGPT Work to over 30 000 staff, embedding conversational assistants directly into Slack and internal dashboards. Early internal metrics show a 22 % reduction in ticket resolution time for support teams.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Evaluate a pilot rollout of ChatGPT Work in your own Slack channels to streamline internal queries.</p>
+  <a href='https://openai.com/index/uber-chatgpt-work-rollout'>🔗 Read more</a>
+  <div class='thumb-row'></div>
+</div>
 
 </div>
 
-<!-- No Expert Voices section – fewer than two expert‑only items available -->
+<div class='expert-voices'>
+<h2>🎙️ Expert Voices</h2>
+</div>
 
 <div class='data-section'>
-  <h2>📊 Data & Analytics</h2>
+<h2>📊 Data & Analytics</h2>
 
-  <div class='article' data-title='Benefit Street Partners answers questions faster with Codex'>
-    <h3>📊 Benefit Street Partners answers questions faster with Codex — OpenAI</h3>
-    <p>Anant Kumar built a Codex‑powered tool that auto‑extracts key clauses from loan agreements and generates valuation snapshots in seconds, shaving 6‑hour manual reviews down to under 15 minutes. The system integrates with the firm’s internal data lake and complies with GDPR.</p>
-    <p class='analyst-take'>💼 <strong>Analyst take:</strong> Prototype a similar clause‑extraction workflow for your own financial documents.</p>
-    <a href='https://openai.com/index/benefit-street-partners'>🔗 Read more</a>
-    <div class='thumb-row'></div>
-  </div>
+<div class='article' data-title='Claude Code vs. Cursor: What a Field Test Shows That the Feature Comparisons Miss'>
+  <h3>📊 Claude Code vs. Cursor: What a Field Test Shows That the Feature Comparisons Miss — Towards Data Science</h3>
+  <p>A hands‑on benchmark measured token consumption for identical coding tasks; Claude Code completed the job using 33 k tokens versus Cursor’s 188 k. The study also highlighted Claude’s tighter context handling, which translates into lower API costs.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Prefer Claude Code for batch code‑generation pipelines to cut token spend.</p>
+  <a href='https://towardsdatascience.com/claude-code-vs-cursor-what-a-field-test-shows-that-the-feature-comparisons-miss/'>🔗 Read more</a>
+  <div class='thumb-row'></div>
+</div>
 
-  <div class='article' data-title='Amp puts AI agents to work beyond code with OpenAI models'>
-    <h3>📊 Amp puts AI agents to work beyond code with OpenAI models — OpenAI</h3>
-    <p>Amp deployed GPT‑6 Astra and Ultrafas agents across marketing, HR, and supply‑chain functions, reporting a 30 % productivity lift in ticket routing and a 22 % reduction in manual data entry. The agents communicate via a unified API and can be swapped out with custom prompts in minutes.</p>
-    <p class='analyst-take'>💼 <strong>Analyst take:</strong> Identify one non‑coding business process to pilot an Amp agent on.</p>
-    <a href='https://openai.com/index/amp-beyond-coding'>🔗 Read more</a>
-    <div class='thumb-row'></div>
-  </div>
+<div class='article' data-title='Agentic AI in Production: Why Your Agent Keeps Answering After Its Tools Fail'>
+  <h3>📊 Agentic AI in Production: Why Your Agent Keeps Answering After Its Tools Fail — Towards Data Science</h3>
+  <p>The article explains how agents without proper tool‑failure handling can hallucinate answers, leading to silent errors. It proposes a watchdog pattern that forces a graceful fallback when external APIs time out.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Wrap every tool call in a timeout‑guard to keep agents honest.</p>
+  <a href='https://towardsdatascience.com/agentic-ai-in-production-why-your-agent-keeps-answering-after-its-tools-fail/'>🔗 Read more</a>
+  <div class='thumb-row'></div>
+</div>
 
-  <div class='article' data-title='How Third Moment Research runs 10,000 agents for 36+ hours'>
-    <h3>📊 How Third Moment Research runs 10,000 agents for 36+ hours — OpenAI</h3>
-    <p>Third Moment orchestrated a fleet of 10 k GPT‑6 agents to simulate cyber‑attack scenarios, running continuous red‑team exercises for over 36 hours with zero human intervention. The platform logs each decision path, enabling post‑mortem analysis that uncovered 12 previously unknown attack vectors.</p>
-    <p class='analyst-take'>💼 <strong>Analyst take:</strong> Explore a small‑scale agent swarm to stress‑test your own security controls.</p>
-    <a href='https://openai.com/index/third-moment-research'>🔗 Read more</a>
-    <div class='thumb-row'></div>
-  </div>
+<div class='article' data-title='How to Add Guardrails to a Local LLM Agent'>
+  <h3>📊 How to Add Guardrails to a Local LLM Agent — Towards Data Science</h3>
+  <p>This step‑by‑step guide shows how to combine Gemma 4, Ollama, and the OpenAI Agents SDK to enforce content policies and rate limits on a self‑hosted LLM. The resulting sandbox reduced policy violations by 93 % in testing.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Deploy the guardrail template before exposing any local LLM to external users.</p>
+  <a href='https://towardsdatascience.com/how-to-add-guardrails-to-a-local-llm-agent/'>🔗 Read more</a>
+  <div class='thumb-row'></div>
+</div>
 
-  <div class='article' data-title='The EU’s next chapter in AI is agentic'>
-    <h3>📊 The EU’s next chapter in AI is agentic — OpenAI</h3>
-    <p>OpenAI’s analysis of EU enterprise surveys shows 68 % of large firms plan to deploy autonomous agents by 2028, with finance and logistics leading adoption. Regulatory guidance released this week clarifies liability for agent‑generated decisions, prompting vendors to embed audit trails.</p>
-    <p class='analyst-take'>💼 <strong>Analyst take:</strong> Align your governance framework with the new EU agentic guidelines now.</p>
-    <a href='https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic'>🔗 Read more</a>
-    <div class='thumb-row'></div>
-  </div>
-
-  <div class='article' data-title='Run fast, private agents on-device with LFM2.5-24B-A2B'>
-    <h3>📊 Run fast, private agents on-device with LFM2.5-24B-A2B — Hugging Face</h3>
-    <p>Hugging Face released the 24‑billion‑parameter LFM2.5‑A2B model optimized for on‑device execution, delivering sub‑100 ms response times on a Snapdragon 8 Gen 2 chip. The repo includes a Dockerized inference server and a step‑by‑step guide for privacy‑first chat assistants.</p>
-    <p class='analyst-take'>💼 <strong>Analyst take:</strong> Deploy LFM2.5‑A2B on a developer phone to prototype a data‑private chatbot.</p>
-    <a href='https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b'>🔗 Read more</a>
-    <div class='thumb-row'></div>
-  </div>
+<div class='article' data-title='Does Agentic RAG Actually Retrieve Better Evidence? I Tested It on 298 Questions'>
+  <h3>📊 Does Agentic RAG Actually Retrieve Better Evidence? I Tested It on 298 Questions — Towards Data Science</h3>
+  <p>A systematic evaluation of Retrieval‑Augmented Generation (RAG) agents shows a 12 % lift in factual correctness over plain LLM answers, but only when the retriever is tuned for domain specificity.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Pair RAG with a domain‑focused vector store for the biggest accuracy gains.</p>
+  <a href='https://towardsdatascience.com/does-agentic-rag-actually-retrieve-better-evidence-i-tested-it-on-298-questions/'>🔗 Read more</a>
+  <div class='thumb-row'></div>
+</div>
 
 </div>
 
 <div class='free-tools-section'>
-  <h2>🆓 Free Tools & Resources</h2>
-  <p class='section-intro'>Specially curated for those building skills on a budget.</p>
+<h2>🆓 Free Tools & Resources</h2>
+<p class='section-intro'>Specially curated for those building skills on a budget.</p>
 
-  <div class='free-tool'>
-    <h3>🛠️ TorchNeuron</h3>
-    <p>A free compiler that translates PyTorch models to run on AWS custom silicon, cutting inference latency without extra hardware.</p>
-    <p><strong>Why grab it now:</strong> Early adopters gain up to 45 % cost savings on LLM workloads.</p>
-    <a href='https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/'>🔗 Get it free</a>
-  </div>
+<div class='free-tool'>
+  <h3>🛠️ Hob – Open‑source, on‑device alternative to Claude Cowork and ChatGPT</h3>
+  <p>A lightweight LLM that runs entirely offline, suitable for secure coding assistants or private chatbots.</p>
+  <p><strong>Why grab it now:</strong> The repo just added a Windows installer, making local testing painless.</p>
+  <a href='https://github.com/FrigadeHQ/hob'>🔗 Get it free</a>
+</div>
 
-  <div class='free-tool'>
-    <h3>🛠️ LFM2.5‑24B‑A2B On‑Device Model</h3>
-    <p>An open‑source 24B‑parameter model that runs locally on mobile CPUs/GPUs, enabling privacy‑first AI assistants.</p>
-    <p><strong>Why grab it now:</strong> The repo includes a one‑click Docker image—no heavy setup required.</p>
-    <a href='https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b'>🔗 Get it free</a>
-  </div>
+<div class='free-tool'>
+  <h3>🛠️ Hurston‑1 – Open‑source TTS that speaks Southern American and Afro‑English</h3>
+  <p>Generates high‑quality speech with regional accents, great for localized voice‑bots or inclusive media.</p>
+  <p><strong>Why grab it now:</strong> New pretrained checkpoints cut inference time by 40 %.</p>
+  <a href='https://huggingface.co/destined/hurston-1'>🔗 Get it free</a>
+</div>
 
-  <div class='free-tool'>
-    <h3>🛠️ Thin Orchestrator Blog & Code</h3>
-    <p>Meta’s engineering post details a lightweight routing architecture that makes AI agents more reliable by reducing the router’s decision space.</p>
-    <p><strong>Why grab it now:</strong> Implement the pattern today to cut agent latency by ~20 % in production.</p>
-    <a href='https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/'>🔗 Get it free</a>
-  </div>
+<div class='free-tool'>
+  <h3>🛠️ Proc‑CLI – Agent‑friendly CLI for process and port management</h3>
+  <p>Provides a simple command line for spawning, monitoring, and terminating AI agent processes, with built‑in health checks.</p>
+  <p><strong>Why grab it now:</strong> Recent update adds JSON‑based config, streamlining multi‑agent orchestration.</p>
+  <a href='https://proc-cli.com/'>🔗 Get it free</a>
+</div>
+
+<div class='free-tool'>
+  <h3>🛠️ Fixing Tool‑Call Accuracy in vLLM</h3>
+  <p>An open‑source patch that improves the reliability of function‑calling for LLMs hosted via vLLM, reducing mis‑fires by 85 %.</p>
+  <p><strong>Why grab it now:</strong> The patch is merged into the master branch, ready for immediate use.</p>
+  <a href='https://www.ubicloud.com/blog/fixing-tool-call-accuracy-in-vllm'>🔗 Get it free</a>
+</div>
 
 </div>
 
 <div class='action-item'>
-  <h2>💡 One Thing To Try Today</h2>
-  <p>Download the LFM2.5‑24B‑A2B model from Hugging Face, run the provided Docker container, and build a simple “Ask‑Me‑Anything” chatbot that answers questions locally on your laptop—no cloud API keys needed. (<30 minutes)</p>
+<h2>💡 One Thing To Try Today</h2>
+<p>Sign up for Greptile’s free tier, connect a small GitHub repo, and run a single “Detect Bugs” scan; note the issues reported and compare the time saved versus a manual code review.</p>
 </div>
-
-<!-- Edition date: October 20, 2026 -->
-```
         
     <div id="feedback" class="feedback-form">
         <h2>Improve Next Week's Edition</h2>
