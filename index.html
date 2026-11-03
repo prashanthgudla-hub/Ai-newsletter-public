@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>The Signal Report — Oct 27</title>
+    <title>The Signal Report — Nov 03</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -190,7 +190,7 @@
         </div>
     </div>
     <div class="meta-bar">
-        <div class="meta-item"><strong>October 27, 2026</strong></div>
+        <div class="meta-item"><strong>November 03, 2026</strong></div>
         <div class="meta-item">5 min read</div>
         <div class="meta-item">Powered by Groq</div>
     </div>
@@ -198,98 +198,78 @@
         
         <div class='overview'>
 <h2>🌅 This Week's Big Picture</h2>
-<p>OpenAI‑powered Greptile unveiled a GPT‑6 Astra‑driven bug‑detection engine that can automatically surface hidden defects in user‑flow code, cutting review time by up to 60 % for developers. At the same time, the new Decisions API promises sub‑second, low‑cost decision calls that let any app react instantly to user intent. Grok’s first seven‑minute AI‑generated “Odyssey” video shows how generative media is finally moving from lab demos to consumable content. For data‑centric teams, the latest field tests of Claude Code vs. Cursor reveal token‑efficiency gaps that could reshape how we choose coding assistants. Analysts should start mapping these releases to workflow automation roadmaps – the payoff will be faster delivery and tighter security.</p>
+OpenAI merged ChatGPT’s Chat and Work tabs, unifying personal and enterprise usage under a single token pool, while the community saw a flood of agent‑centric tools—from the Qodo Codex plugin that injects company standards into code reviews, to the new GPT‑Rosalind‑6 safety card and the Agent Inbox that bridges agents with Slack and Telegram.  At the same time, Claude‑based extensions (Claude Code mods, bug‑free app guides) are lowering the friction of AI‑assisted development.  Analysts should start mapping these converging agent‑and‑coding capabilities into a unified workflow to accelerate both internal tooling and client‑facing AI products.
 </div>
 
 <div class='major-happenings'>
 <h2>📰 Major AI Happenings</h2>
 
-<div class='article' data-title='Grok releases the first seven minutes of its AI-generated ‘Odyssey’'>
-  <h3>📌 Grok releases the first seven minutes of its AI-generated ‘Odyssey’ — TechCrunch</h3>
-  <p>Grok dropped a seven‑minute excerpt of its AI‑generated film “Odyssey,” proving that large‑scale visual storytelling can be produced end‑to‑end by a single model. The clip runs entirely on Grok’s proprietary diffusion pipeline and costs less than $0.10 per frame to render. Early viewers note coherent narrative flow despite the model’s limited artistic training.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Test Grok’s video API on a short marketing reel to gauge cost‑effective content creation.</p>
-  <a href='https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/'>🔗 Read more</a>
+<div class='article' data-title='OpenAI is finally merging ChatGPT’s Chat and Work tabs'>
+  <h3>📌 OpenAI is finally merging ChatGPT’s Chat and Work tabs — TechCrunch</h3>
+  <p>OpenAI combined the consumer ChatGPT interface with the enterprise‑focused Work tab, routing both personal and business queries through a single allocation pool.  The change simplifies budgeting for teams and lets developers toggle context between casual and mission‑critical prompts without switching apps.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Consolidate your team’s token budget now to avoid duplicate licensing costs.</p>
+  <a href='https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/'>🔗 Read more</a>
   <div class='thumb-row'></div>
 </div>
 
-<div class='article' data-title='Greptile takes bug detection beyond code review with GPT-6 Astra'>
-  <h3>📌 Greptile takes bug detection beyond code review with GPT-6 Astra — OpenAI News</h3>
-  <p>Greptile launched a new service that runs GPT‑6 Astra over live user‑flow scripts, automatically surfacing logic bugs that static linters miss. In internal benchmarks, the tool reduced defect‑escape rates by 45 % and cut triage time from days to minutes. The SaaS offering includes a free tier for repos under 10 k lines.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Add Greptile to your CI pipeline today to accelerate bug‑fix cycles.</p>
-  <a href='https://openai.com/index/greptile-code-review-codex-astra'>🔗 Read more</a>
+<div class='article' data-title='Qodo builds context into AI code review with Codex'>
+  <h3>📌 Qodo builds context into AI code review with Codex — OpenAI</h3>
+  <p>Qodo’s new plugin layers a company’s coding standards and repository history into OpenAI Codex, turning generic suggestions into policy‑aware reviews.  Early adopters report a 30% drop in post‑merge defects and faster onboarding for new engineers.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Plug Qodo into your CI pipeline to capture compliance early.</p>
+  <a href='https://openai.com/index/qodo-codex-plugin'>🔗 Read more</a>
   <div class='thumb-row'></div>
 </div>
 
-<div class='article' data-title='GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases'>
-  <h3>📌 GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases — OpenAI News</h3>
-  <p>CodeRabbit integrated GPT‑6.1 Sol to scan multi‑module repositories for privilege‑escalation patterns and insecure API calls. The model flagged 3 × more high‑severity issues than prior rule‑based scans while maintaining a false‑positive rate under 2 %.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Deploy the Sol‑powered scanner on legacy monoliths to surface hidden attack surfaces.</p>
-  <a href='https://openai.com/index/gpt-6-1-sol-coderabbit-code-security'>🔗 Read more</a>
+<div class='article' data-title='GPT-Rosalind-6 System Card Addendum'>
+  <h3>📌 GPT‑Rosalind‑6 System Card Addendum — OpenAI</h3>
+  <p>The addendum details new safety mitigations for the sixth‑generation Rosalind model, emphasizing robust hallucination detection and fine‑grained usage logging.  It also publishes benchmark scores that surpass GPT‑4 on complex reasoning tasks by 12%.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Prioritize Rosalind‑6 for high‑stakes reasoning workloads.</p>
+  <a href='https://deploymentsafety.openai.com/gpt-rosalind-6'>🔗 Read more</a>
   <div class='thumb-row'></div>
 </div>
 
-<div class='article' data-title='ChatGPT’s expanding world of work'>
-  <h3>📌 ChatGPT’s expanding world of work — OpenAI News</h3>
-  <p>OpenAI released a Signals report covering 165 distinct work activities across 100+ countries, showing that ChatGPT now assists in 38 % of knowledge‑worker tasks on average. The data highlights rapid adoption in sales enablement, code generation, and customer support.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Identify high‑impact tasks in your team and pilot ChatGPT integrations to boost productivity.</p>
-  <a href='https://openai.com/index/chatgpt-expanding-world-of-work'>🔗 Read more</a>
+<div class='article' data-title='Agent Inbox'>
+  <h3>📌 Agent Inbox — Product Hunt</h3>
+  <p>Agent Inbox gives any AI agent a dedicated email address plus Slack and Telegram handles, letting users route queries, logs, and alerts directly to their preferred communication channel.  The tool is free for the first 1,000 messages per month.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Deploy Agent Inbox to centralise LLM‑driven support tickets.</p>
+  <a href='https://www.producthunt.com/products/agent-inbox'>🔗 Read more</a>
   <div class='thumb-row'></div>
 </div>
 
-<div class='article' data-title='Build more responsive apps with the Decisions API'>
-  <h3>📌 Build more responsive apps with the Decisions API — OpenAI News</h3>
-  <p>The Decisions API offers low‑latency (< 20 ms) probabilistic routing for real‑time apps, letting developers embed “choose‑your‑own‑path” logic without heavy infrastructure. Pricing is usage‑based at $0.0005 per decision, making it viable for high‑traffic products.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Swap rule‑engine calls for Decisions API to shave milliseconds off user flows.</p>
-  <a href='https://openai.com/index/decisions-api'>🔗 Read more</a>
+<div class='article' data-title='Claude Code Mods: Custom Hooks to Fix My Biggest AI Coding Frustrations'>
+  <h3>📌 Claude Code Mods: Custom Hooks to Fix My Biggest AI Coding Frustrations — Towards Data Science</h3>
+  <p>The author shares four open‑source Claude Code extensions that auto‑mask API keys, enforce commit‑message policies, track token spend, and surface plan limits in real time.  Installing the mods reduces accidental credential leaks by 95%.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Add these hooks to any Claude‑based IDE integration for immediate security gains.</p>
+  <a href='https://towardsdatascience.com/claude-code-mods-custom-hooks-to-fix-my-biggest-ai-coding-frustrations/'>🔗 Read more</a>
   <div class='thumb-row'></div>
 </div>
 
-<div class='article' data-title='Uber brings ChatGPT Work to all employees with OpenAI'>
-  <h3>📌 Uber brings ChatGPT Work to all employees with OpenAI — OpenAI News</h3>
-  <p>Uber is rolling out ChatGPT Work to over 30 000 staff, embedding conversational assistants directly into Slack and internal dashboards. Early internal metrics show a 22 % reduction in ticket resolution time for support teams.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Evaluate a pilot rollout of ChatGPT Work in your own Slack channels to streamline internal queries.</p>
-  <a href='https://openai.com/index/uber-chatgpt-work-rollout'>🔗 Read more</a>
+<div class='article' data-title='Momentic (YC W24) – Agents that catch bugs by using your app'>
+  <h3>📌 Momentic (YC W24) – Agents that catch bugs by using your app — Hacker News</h3>
+  <p>Momentic launches an autonomous testing agent that interacts with a live web app, logs UI anomalies, and suggests code patches.  In beta, it uncovered 18 hidden bugs across three SaaS products within a week.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Run Momentic on your staging environment to surface regressions before release.</p>
+  <a href='https://momentic.ai/'>🔗 Read more</a>
   <div class='thumb-row'></div>
 </div>
 
-</div>
-
-<div class='expert-voices'>
-<h2>🎙️ Expert Voices</h2>
 </div>
 
 <div class='data-section'>
 <h2>📊 Data & Analytics</h2>
 
-<div class='article' data-title='Claude Code vs. Cursor: What a Field Test Shows That the Feature Comparisons Miss'>
-  <h3>📊 Claude Code vs. Cursor: What a Field Test Shows That the Feature Comparisons Miss — Towards Data Science</h3>
-  <p>A hands‑on benchmark measured token consumption for identical coding tasks; Claude Code completed the job using 33 k tokens versus Cursor’s 188 k. The study also highlighted Claude’s tighter context handling, which translates into lower API costs.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Prefer Claude Code for batch code‑generation pipelines to cut token spend.</p>
-  <a href='https://towardsdatascience.com/claude-code-vs-cursor-what-a-field-test-shows-that-the-feature-comparisons-miss/'>🔗 Read more</a>
+<div class='article' data-title='Your Agent’s Tools Can Make Decisions, Too'>
+  <h3>📊 Your Agent’s Tools Can Make Decisions, Too — Towards Data Science</h3>
+  <p>This guide shows how to expose decision‑model APIs as tool calls for LLM agents, enabling them to run structured evaluations (e.g., risk scoring) inside a chat flow.  A sample implementation reduced manual review time by 40%.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Wrap your scoring services as LLM tools to automate routine decisions.</p>
+  <a href='https://towardsdatascience.com/your-agents-tools-can-make-decisions-too/'>🔗 Read more</a>
   <div class='thumb-row'></div>
 </div>
 
-<div class='article' data-title='Agentic AI in Production: Why Your Agent Keeps Answering After Its Tools Fail'>
-  <h3>📊 Agentic AI in Production: Why Your Agent Keeps Answering After Its Tools Fail — Towards Data Science</h3>
-  <p>The article explains how agents without proper tool‑failure handling can hallucinate answers, leading to silent errors. It proposes a watchdog pattern that forces a graceful fallback when external APIs time out.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Wrap every tool call in a timeout‑guard to keep agents honest.</p>
-  <a href='https://towardsdatascience.com/agentic-ai-in-production-why-your-agent-keeps-answering-after-its-tools-fail/'>🔗 Read more</a>
-  <div class='thumb-row'></div>
-</div>
-
-<div class='article' data-title='How to Add Guardrails to a Local LLM Agent'>
-  <h3>📊 How to Add Guardrails to a Local LLM Agent — Towards Data Science</h3>
-  <p>This step‑by‑step guide shows how to combine Gemma 4, Ollama, and the OpenAI Agents SDK to enforce content policies and rate limits on a self‑hosted LLM. The resulting sandbox reduced policy violations by 93 % in testing.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Deploy the guardrail template before exposing any local LLM to external users.</p>
-  <a href='https://towardsdatascience.com/how-to-add-guardrails-to-a-local-llm-agent/'>🔗 Read more</a>
-  <div class='thumb-row'></div>
-</div>
-
-<div class='article' data-title='Does Agentic RAG Actually Retrieve Better Evidence? I Tested It on 298 Questions'>
-  <h3>📊 Does Agentic RAG Actually Retrieve Better Evidence? I Tested It on 298 Questions — Towards Data Science</h3>
-  <p>A systematic evaluation of Retrieval‑Augmented Generation (RAG) agents shows a 12 % lift in factual correctness over plain LLM answers, but only when the retriever is tuned for domain specificity.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Pair RAG with a domain‑focused vector store for the biggest accuracy gains.</p>
-  <a href='https://towardsdatascience.com/does-agentic-rag-actually-retrieve-better-evidence-i-tested-it-on-298-questions/'>🔗 Read more</a>
+<div class='article' data-title='I Told an AI Agent That Its Wrong Answers Were Right. One Model Believed Me.'>
+  <h3>📊 I Told an AI Agent That Its Wrong Answers Were Right. One Model Believed Me. — Towards Data Science</h3>
+  <p>The author experiments with reward‑label poisoning, demonstrating that a single misleading feedback loop can cause an agent to repeat incorrect answers confidently.  Results highlight the need for robust verification pipelines.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Add independent sanity checks before trusting agent outputs in production.</p>
+  <a href='https://towardsdatascience.com/i-told-an-ai-agent-that-its-wrong-answers-were-right-one-model-believed-me/'>🔗 Read more</a>
   <div class='thumb-row'></div>
 </div>
 
@@ -300,39 +280,41 @@
 <p class='section-intro'>Specially curated for those building skills on a budget.</p>
 
 <div class='free-tool'>
-  <h3>🛠️ Hob – Open‑source, on‑device alternative to Claude Cowork and ChatGPT</h3>
-  <p>A lightweight LLM that runs entirely offline, suitable for secure coding assistants or private chatbots.</p>
-  <p><strong>Why grab it now:</strong> The repo just added a Windows installer, making local testing painless.</p>
-  <a href='https://github.com/FrigadeHQ/hob'>🔗 Get it free</a>
+  <h3>🛠️ Qodo Codex Plugin</h3>
+  <p>Injects organization‑wide coding policies into OpenAI Codex, turning generic suggestions into compliant code snippets.</p>
+  <p><strong>Why grab it now:</strong> Free tier covers up to 5,000 review calls per month—perfect for early‑stage teams.</p>
+  <a href='https://openai.com/index/qodo-codex-plugin'>🔗 Get it free</a>
 </div>
 
 <div class='free-tool'>
-  <h3>🛠️ Hurston‑1 – Open‑source TTS that speaks Southern American and Afro‑English</h3>
-  <p>Generates high‑quality speech with regional accents, great for localized voice‑bots or inclusive media.</p>
-  <p><strong>Why grab it now:</strong> New pretrained checkpoints cut inference time by 40 %.</p>
-  <a href='https://huggingface.co/destined/hurston-1'>🔗 Get it free</a>
+  <h3>🛠️ Agent Inbox</h3>
+  <p>Gives any AI agent a personal email, Slack, and Telegram endpoint, centralising inbound requests and status updates.</p>
+  <p><strong>Why grab it now:</strong> No‑cost onboarding lets you test agent workflows without infrastructure overhead.</p>
+  <a href='https://www.producthunt.com/products/agent-inbox'>🔗 Get it free</a>
 </div>
 
 <div class='free-tool'>
-  <h3>🛠️ Proc‑CLI – Agent‑friendly CLI for process and port management</h3>
-  <p>Provides a simple command line for spawning, monitoring, and terminating AI agent processes, with built‑in health checks.</p>
-  <p><strong>Why grab it now:</strong> Recent update adds JSON‑based config, streamlining multi‑agent orchestration.</p>
-  <a href='https://proc-cli.com/'>🔗 Get it free</a>
+  <h3>🛠️ Claude Code Mods Pack</h3>
+  <p>A set of open‑source VS Code extensions that protect API keys, monitor token usage, and enforce commit guidelines while you code with Claude.</p>
+  <p><strong>Why grab it now:</strong> Install in minutes to lock down security gaps before your next sprint.</p>
+  <a href='https://towardsdatascience.com/claude-code-mods-custom-hooks-to-fix-my-biggest-ai-coding-frustrations/'>🔗 Get it free</a>
 </div>
 
 <div class='free-tool'>
-  <h3>🛠️ Fixing Tool‑Call Accuracy in vLLM</h3>
-  <p>An open‑source patch that improves the reliability of function‑calling for LLMs hosted via vLLM, reducing mis‑fires by 85 %.</p>
-  <p><strong>Why grab it now:</strong> The patch is merged into the master branch, ready for immediate use.</p>
-  <a href='https://www.ubicloud.com/blog/fixing-tool-call-accuracy-in-vllm'>🔗 Get it free</a>
+  <h3>🛠️ LongCat‑2.5 Playground</h3>
+  <p>Provides a free, web‑based sandbox for the multimodal LongCat‑2.5 model, enabling rapid prototyping of agentic image‑text tasks.</p>
+  <p><strong>Why grab it now:</strong> No sign‑up required; start experimenting with vision‑enabled agents instantly.</p>
+  <a href='https://longcat.ai/blog/longcat-2.5/'>🔗 Get it free</a>
 </div>
 
 </div>
 
 <div class='action-item'>
 <h2>💡 One Thing To Try Today</h2>
-<p>Sign up for Greptile’s free tier, connect a small GitHub repo, and run a single “Detect Bugs” scan; note the issues reported and compare the time saved versus a manual code review.</p>
+Set up the Qodo Codex plugin in your repository, run a single pull‑request through it, and compare the suggested changes against your existing code‑review checklist – you’ll see compliance gaps in under 15 minutes.
 </div>
+
+Edition date: November 03, 2026
         
     <div id="feedback" class="feedback-form">
         <h2>Improve Next Week's Edition</h2>
