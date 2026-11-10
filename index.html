@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>The Signal Report — Nov 03</title>
+    <title>The Signal Report — Nov 10</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -190,7 +190,7 @@
         </div>
     </div>
     <div class="meta-bar">
-        <div class="meta-item"><strong>November 03, 2026</strong></div>
+        <div class="meta-item"><strong>November 10, 2026</strong></div>
         <div class="meta-item">5 min read</div>
         <div class="meta-item">Powered by Groq</div>
     </div>
@@ -198,57 +198,73 @@
         
         <div class='overview'>
 <h2>🌅 This Week's Big Picture</h2>
-OpenAI merged ChatGPT’s Chat and Work tabs, unifying personal and enterprise usage under a single token pool, while the community saw a flood of agent‑centric tools—from the Qodo Codex plugin that injects company standards into code reviews, to the new GPT‑Rosalind‑6 safety card and the Agent Inbox that bridges agents with Slack and Telegram.  At the same time, Claude‑based extensions (Claude Code mods, bug‑free app guides) are lowering the friction of AI‑assisted development.  Analysts should start mapping these converging agent‑and‑coding capabilities into a unified workflow to accelerate both internal tooling and client‑facing AI products.
+<p>OpenAI’s launch of GPT‑6 Cyber and the debut of Meta’s ultra‑cheap Muse Ember together push the cost frontier for agentic AI, while Anthropic’s Mythos and Fable models raise the bar on coding and reasoning performance. Google’s Gemini Omni 1.2 Flash adds longer‑clip video generation at half the price of its predecessor, and ChatGPT Enterprise is now a one‑click purchase on AWS Marketplace. For data‑driven teams these releases mean faster prototyping, tighter security, and cheaper compute – a clear signal to start testing lightweight agents in production today.</p>
 </div>
 
 <div class='major-happenings'>
 <h2>📰 Major AI Happenings</h2>
 
-<div class='article' data-title='OpenAI is finally merging ChatGPT’s Chat and Work tabs'>
-  <h3>📌 OpenAI is finally merging ChatGPT’s Chat and Work tabs — TechCrunch</h3>
-  <p>OpenAI combined the consumer ChatGPT interface with the enterprise‑focused Work tab, routing both personal and business queries through a single allocation pool.  The change simplifies budgeting for teams and lets developers toggle context between casual and mission‑critical prompts without switching apps.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Consolidate your team’s token budget now to avoid duplicate licensing costs.</p>
-  <a href='https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/'>🔗 Read more</a>
+<div class='article' data-title='Anthropic releases new Mythos and Fable models amid RSI concerns'>
+  <h3>📌 Anthropic releases new Mythos and Fable models amid RSI concerns — TechCrunch</h3>
+  <p>Anthropic unveiled Mythos (coding‑focused) and Fable (reasoning‑oriented) models that claim 15 % higher success rates on benchmark suites while using 20 % less compute. The rollout includes a developer‑friendly API and early‑access safety controls to mitigate recursive self‑improvement risks.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Spin up a quick prototype in your sandbox to compare Mythos against existing Codex workflows.</p>
+  <a href='https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/'>🔗 Read more</a>
   <div class='thumb-row'></div>
 </div>
 
-<div class='article' data-title='Qodo builds context into AI code review with Codex'>
-  <h3>📌 Qodo builds context into AI code review with Codex — OpenAI</h3>
-  <p>Qodo’s new plugin layers a company’s coding standards and repository history into OpenAI Codex, turning generic suggestions into policy‑aware reviews.  Early adopters report a 30% drop in post‑merge defects and faster onboarding for new engineers.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Plug Qodo into your CI pipeline to capture compliance early.</p>
-  <a href='https://openai.com/index/qodo-codex-plugin'>🔗 Read more</a>
+<div class='article' data-title='Meta releases Muse Ember, a new lightweight model for agent execution'>
+  <h3>📌 Meta releases Muse Ember, a new lightweight model for agent execution — TechCrunch</h3>
+  <p>Ember charges just $0.10 per million input tokens, making it the cheapest agentic model on the market. It targets micro‑tasks like data lookup and form filling, delivering latency under 200 ms on typical cloud GPUs.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Deploy Ember for low‑cost automation in Slack‑bot or internal ticket‑routing pipelines.</p>
+  <a href='https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/'>🔗 Read more</a>
   <div class='thumb-row'></div>
 </div>
 
-<div class='article' data-title='GPT-Rosalind-6 System Card Addendum'>
-  <h3>📌 GPT‑Rosalind‑6 System Card Addendum — OpenAI</h3>
-  <p>The addendum details new safety mitigations for the sixth‑generation Rosalind model, emphasizing robust hallucination detection and fine‑grained usage logging.  It also publishes benchmark scores that surpass GPT‑4 on complex reasoning tasks by 12%.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Prioritize Rosalind‑6 for high‑stakes reasoning workloads.</p>
-  <a href='https://deploymentsafety.openai.com/gpt-rosalind-6'>🔗 Read more</a>
+<div class='article' data-title='Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips'>
+  <h3>📌 Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips — Google AI Blog</h3>
+  <p>Google’s Gemini Omni 1.2 Flash can process video clips up to 30 seconds at double the speed of Omni 1.1, while cutting inference cost by 40 %. The model supports multimodal prompting that blends text, image, and audio.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Use Flash to generate quick demo videos for product pitches without a graphics team.</p>
+  <a href='https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/'>🔗 Read more</a>
   <div class='thumb-row'></div>
 </div>
 
-<div class='article' data-title='Agent Inbox'>
-  <h3>📌 Agent Inbox — Product Hunt</h3>
-  <p>Agent Inbox gives any AI agent a dedicated email address plus Slack and Telegram handles, letting users route queries, logs, and alerts directly to their preferred communication channel.  The tool is free for the first 1,000 messages per month.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Deploy Agent Inbox to centralise LLM‑driven support tickets.</p>
-  <a href='https://www.producthunt.com/products/agent-inbox'>🔗 Read more</a>
+<div class='article' data-title='ChatGPT Enterprise now available in AWS Marketplace'>
+  <h3>📌 ChatGPT Enterprise now available in AWS Marketplace — OpenAI</h3>
+  <p>ChatGPT Enterprise can be provisioned directly from the AWS Marketplace, allowing teams to attach the service to existing IAM roles and billing structures. The offering includes SOC 2 compliance, single‑sign‑on, and unlimited prompt history.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Add the Enterprise plan to your AWS‑linked data pipelines for secure, scalable LLM access.</p>
+  <a href='https://openai.com/index/chatgpt-enterprise-aws-marketplace'>🔗 Read more</a>
   <div class='thumb-row'></div>
 </div>
 
-<div class='article' data-title='Claude Code Mods: Custom Hooks to Fix My Biggest AI Coding Frustrations'>
-  <h3>📌 Claude Code Mods: Custom Hooks to Fix My Biggest AI Coding Frustrations — Towards Data Science</h3>
-  <p>The author shares four open‑source Claude Code extensions that auto‑mask API keys, enforce commit‑message policies, track token spend, and surface plan limits in real time.  Installing the mods reduces accidental credential leaks by 95%.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Add these hooks to any Claude‑based IDE integration for immediate security gains.</p>
-  <a href='https://towardsdatascience.com/claude-code-mods-custom-hooks-to-fix-my-biggest-ai-coding-frustrations/'>🔗 Read more</a>
+<div class='article' data-title='CodeRabbit scales agentic software development and ships 20x more'>
+  <h3>📌 CodeRabbit scales agentic software development and ships 20x more — OpenAI</h3>
+  <p>CodeRabbit combines OpenAI’s latest models with a trust‑layer that auto‑reviews generated code, resulting in a 20× increase in shipped features for early adopters. The system logs execution traces to guard against regression.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Integrate CodeRabbit into your CI pipeline to accelerate feature delivery while keeping quality checks automated.</p>
+  <a href='https://openai.com/index/coderabbit-codex-daybreak'>🔗 Read more</a>
   <div class='thumb-row'></div>
 </div>
 
-<div class='article' data-title='Momentic (YC W24) – Agents that catch bugs by using your app'>
-  <h3>📌 Momentic (YC W24) – Agents that catch bugs by using your app — Hacker News</h3>
-  <p>Momentic launches an autonomous testing agent that interacts with a live web app, logs UI anomalies, and suggests code patches.  In beta, it uncovered 18 hidden bugs across three SaaS products within a week.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Run Momentic on your staging environment to surface regressions before release.</p>
-  <a href='https://momentic.ai/'>🔗 Read more</a>
+<div class='article' data-title='GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents'>
+  <h3>📌 GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents — OpenAI</h3>
+  <p>GPT‑6 Cyber is a specialized LLM trained on vulnerability data, capable of auto‑generating exploit proofs and remediation steps. Early tests show a 30 % reduction in mean‑time‑to‑detect (MTTD) for simulated attacks.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Run a pilot scan on a non‑production environment to benchmark GPT‑6 Cyber against existing SIEM alerts.</p>
+  <a href='https://openai.com/index/introducing-gpt-6-cyber'>🔗 Read more</a>
+  <div class='thumb-row'></div>
+</div>
+
+<div class='article' data-title='Merge builds product and business tools with OpenAI technology'>
+  <h3>📌 Merge builds product and business tools with OpenAI technology — OpenAI</h3>
+  <p>Merge leverages GPT‑6 Astra, ChatGPT, and Codex to auto‑generate product requirement documents, user stories, and even mock UI code. Companies report a 40 % cut in planning cycle time.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Trial Merge on a small feature backlog to measure time saved on spec writing.</p>
+  <a href='https://openai.com/index/merge-builds-with-openai'>🔗 Read more</a>
+  <div class='thumb-row'></div>
+</div>
+
+<div class='article' data-title='Formally verifying agent-written full-stack web apps with PDD Kit'>
+  <h3>📌 Formally verifying agent-written full-stack web apps with PDD Kit — Microsoft Research</h3>
+  <p>Microsoft’s PDD Kit introduces a verification layer that checks agent‑generated code against type‑safety and security properties before deployment. In internal trials, defect leakage dropped from 12 % to 2 %.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Add PDD verification to your agent‑code workflow to catch regressions early.</p>
+  <a href='https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/'>🔗 Read more</a>
   <div class='thumb-row'></div>
 </div>
 
@@ -257,19 +273,35 @@ OpenAI merged ChatGPT’s Chat and Work tabs, unifying personal and enterprise u
 <div class='data-section'>
 <h2>📊 Data & Analytics</h2>
 
-<div class='article' data-title='Your Agent’s Tools Can Make Decisions, Too'>
-  <h3>📊 Your Agent’s Tools Can Make Decisions, Too — Towards Data Science</h3>
-  <p>This guide shows how to expose decision‑model APIs as tool calls for LLM agents, enabling them to run structured evaluations (e.g., risk scoring) inside a chat flow.  A sample implementation reduced manual review time by 40%.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Wrap your scoring services as LLM tools to automate routine decisions.</p>
-  <a href='https://towardsdatascience.com/your-agents-tools-can-make-decisions-too/'>🔗 Read more</a>
+<div class='article' data-title='Measuring how AI agents handle everyday wet-lab science'>
+  <h3>📊 Measuring how AI agents handle everyday wet-lab science — OpenAI</h3>
+  <p>OpenAI’s BioBasicsBench introduces 100 real‑world laboratory tasks (e.g., protocol design, data logging) to evaluate agent competence. Top agents solved 78 % of tasks, highlighting gaps in reagent‑handling reasoning.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Use the benchmark to score your custom lab‑assistant before production rollout.</p>
+  <a href='https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science'>🔗 Read more</a>
   <div class='thumb-row'></div>
 </div>
 
-<div class='article' data-title='I Told an AI Agent That Its Wrong Answers Were Right. One Model Believed Me.'>
-  <h3>📊 I Told an AI Agent That Its Wrong Answers Were Right. One Model Believed Me. — Towards Data Science</h3>
-  <p>The author experiments with reward‑label poisoning, demonstrating that a single misleading feedback loop can cause an agent to repeat incorrect answers confidently.  Results highlight the need for robust verification pipelines.</p>
-  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Add independent sanity checks before trusting agent outputs in production.</p>
-  <a href='https://towardsdatascience.com/i-told-an-ai-agent-that-its-wrong-answers-were-right-one-model-believed-me/'>🔗 Read more</a>
+<div class='article' data-title='How to Estimate the Recall of AI Agents with Capture-Recapture'>
+  <h3>📊 How to Estimate the Recall of AI Agents with Capture-Recapture — Towards Data Science</h3>
+  <p>The article adapts a 19th‑century fisheries method to estimate how many relevant outputs an AI agent missed, using duplicate sampling across runs. Applied to 294 contract‑review tasks, the technique revealed a 12 % hidden error rate.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Run capture‑recapture on your own agent pipelines to surface blind spots.</p>
+  <a href='https://towardsdatascience.com/how-to-estimate-the-recall-of-ai-agents-with-capture-recapture/'>🔗 Read more</a>
+  <div class='thumb-row'></div>
+</div>
+
+<div class='article' data-title='Using latent-agent swarms for math discovery and optimization'>
+  <h3>📊 Using latent-agent swarms for math discovery and optimization — Reddit /r/MachineLearning</h3>
+  <p>Researchers demonstrate that swarms of lightweight agents can collectively explore mathematical conjectures, converging 3× faster than a single heavyweight model. The approach scales with inexpensive GPU clusters.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Experiment with latent swarms for hyperparameter search in your next model‑training run.</p>
+  <a href='https://www.reddit.com/r/MachineLearning/comments/1xrunu7/using_latentagent_swarms_for_math_discovery_and/'>🔗 Read more</a>
+  <div class='thumb-row'></div>
+</div>
+
+<div class='article' data-title='Can coding agents build interactive 3D worlds? Frontier3DBench evaluates 11 configurations'>
+  <h3>📊 Can coding agents build interactive 3D worlds? Frontier3DBench evaluates 11 configurations — Reddit /r/MachineLearning</h3>
+  <p>Frontier3DBench tests agents on constructing navigable 3D environments, measuring fidelity, runtime, and asset reuse. The best configuration achieved near‑real‑time rendering with only 2 GB of VRAM.</p>
+  <p class='analyst-take'>💼 <strong>Analyst take:</strong> Leverage the top‑scoring config to prototype immersive data‑visualisation demos.</p>
+  <a href='https://www.reddit.com/r/MachineLearning/comments/1xrhg3a/can_coding_agents_build_interactive_3d_worlds/'>🔗 Read more</a>
   <div class='thumb-row'></div>
 </div>
 
@@ -280,41 +312,34 @@ OpenAI merged ChatGPT’s Chat and Work tabs, unifying personal and enterprise u
 <p class='section-intro'>Specially curated for those building skills on a budget.</p>
 
 <div class='free-tool'>
-  <h3>🛠️ Qodo Codex Plugin</h3>
-  <p>Injects organization‑wide coding policies into OpenAI Codex, turning generic suggestions into compliant code snippets.</p>
-  <p><strong>Why grab it now:</strong> Free tier covers up to 5,000 review calls per month—perfect for early‑stage teams.</p>
-  <a href='https://openai.com/index/qodo-codex-plugin'>🔗 Get it free</a>
+  <h3>🛠️ OpenAI Playground (GPT‑4o)</h3>
+  <p>Experiment with the latest GPT‑4o model directly in your browser – no API key required. Build prompts, test multi‑modal inputs, and export code snippets instantly.</p>
+  <p><strong>Why grab it now:</strong> The free tier now includes 25 k tokens per month, enough for daily prototyping.</p>
+  <a href='https://platform.openai.com/playground'>🔗 Get it free</a>
 </div>
 
 <div class='free-tool'>
-  <h3>🛠️ Agent Inbox</h3>
-  <p>Gives any AI agent a personal email, Slack, and Telegram endpoint, centralising inbound requests and status updates.</p>
-  <p><strong>Why grab it now:</strong> No‑cost onboarding lets you test agent workflows without infrastructure overhead.</p>
-  <a href='https://www.producthunt.com/products/agent-inbox'>🔗 Get it free</a>
+  <h3>🛠️ Hugging Face Inference API (Free tier)</h3>
+  <p>Deploy community models such as Meta Ember or Anthropic Mythos with just one line of Python. The free tier offers 30 GB of compute per month.</p>
+  <p><strong>Why grab it now:</strong> Immediate access to lightweight agents without provisioning GPUs.</p>
+  <a href='https://huggingface.co/inference-api'>🔗 Get it free</a>
 </div>
 
 <div class='free-tool'>
-  <h3>🛠️ Claude Code Mods Pack</h3>
-  <p>A set of open‑source VS Code extensions that protect API keys, monitor token usage, and enforce commit guidelines while you code with Claude.</p>
-  <p><strong>Why grab it now:</strong> Install in minutes to lock down security gaps before your next sprint.</p>
-  <a href='https://towardsdatascience.com/claude-code-mods-custom-hooks-to-fix-my-biggest-ai-coding-frustrations/'>🔗 Get it free</a>
-</div>
-
-<div class='free-tool'>
-  <h3>🛠️ LongCat‑2.5 Playground</h3>
-  <p>Provides a free, web‑based sandbox for the multimodal LongCat‑2.5 model, enabling rapid prototyping of agentic image‑text tasks.</p>
-  <p><strong>Why grab it now:</strong> No sign‑up required; start experimenting with vision‑enabled agents instantly.</p>
-  <a href='https://longcat.ai/blog/longcat-2.5/'>🔗 Get it free</a>
+  <h3>🛠️ Salesforce Trailhead – AI Basics</h3>
+  <p>Self‑paced, free modules covering how to embed LLMs into CRM workflows, build custom Einstein bots, and use prompt‑engineering best practices.</p>
+  <p><strong>Why grab it now:</strong> New hands‑on labs on integrating ChatGPT Enterprise with Salesforce objects are live this week.</p>
+  <a href='https://trailhead.salesforce.com/en/content/learn/modules/ai-basics'>🔗 Get it free</a>
 </div>
 
 </div>
 
 <div class='action-item'>
 <h2>💡 One Thing To Try Today</h2>
-Set up the Qodo Codex plugin in your repository, run a single pull‑request through it, and compare the suggested changes against your existing code‑review checklist – you’ll see compliance gaps in under 15 minutes.
+<p>Sign up for a free Hugging Face account, pull the Meta Ember model, and run a 5‑minute “extract‑customer‑info” agent on a sample CSV to see how cheap, real‑time agentic processing can be.</p>
 </div>
 
-Edition date: November 03, 2026
+Edition date: November 10, 2026
         
     <div id="feedback" class="feedback-form">
         <h2>Improve Next Week's Edition</h2>
